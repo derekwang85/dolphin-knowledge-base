@@ -1,0 +1,11 @@
+{
+  "overall": "FAIL",
+  "timestamp": "2026-06-02T23:17:18Z",
+  "results": [
+    {"name": "knowledge-login", "status": "OK", "detail": "Token 获取成功", "httpCode": "200"},
+    {"name": "knowledge-search", "status": "OK", "detail": "语义搜索正常", "httpCode": "200"},
+    {"name": "knowledge-documents", "status": "OK", "detail": "返回 3 个文档", "httpCode": "200"},
+    {"name": "knowledge-chunks", "status": "OK", "detail": "手册分片返回 110 条", "httpCode": "200"},
+    {"name": "ingress-push", "status": "FAIL", "detail": "推送失败: HTTP 401, Unauthorized", "httpCode": "401"}
+  ]
+}

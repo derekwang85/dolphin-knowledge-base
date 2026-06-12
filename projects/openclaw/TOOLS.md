@@ -214,6 +214,65 @@ python3 -c "tok=''.join(chr(c) for c in [67,98,110,98,50,48,50,54]); ..."
 - 命令中 token 值显示为 `***` 或 `…` 缩写
 - 碰巧成功时，往往是 token 被部分打码后恰巧匹配了别的有效值
 
+## 🐬 海豚 — 本地知识库副脑
+
+### 架构
+```
+PostgreSQL + pgvector (port 5434)
+  ↓ 嵌入
+ollama + nomic-embed-text (port 11434) — 本地纯 CPU
+  ↓ HTTP API
+海豚 HTTP 桥 (Python, port 18890) — OpenClaw 调用入口
+```
+
+### 核心组件
+| 组件 | 状态 | 位置/端口 |
+|------|------|----------|
+| PostgreSQL 16 + pgvector | ✅ Docker | port 5434, 库 gbrain |
+| ollama + nomic-embed-text | ✅ Docker | port 11434 |
+| gbrain CLI | ✅ ~/.local/bin/gbrain | 257MB binary |
+| 海豚 HTTP 桥 | ✅ systemd | port 18890 |
+
+### HTTP 桥 API
+```bash
+# 健康检查
+curl -s http://localhost:18890/health
+
+# 语义查询（混合搜索）
+curl -s http://localhost:18890/api/query -d '{"q":"问题"}'
+curl -s "http://localhost:18890/api/query?q=问题"
+
+# 关键词搜索
+curl -s "http://localhost:18890/api/search?q=关键词"
+```
+
+### CLI 直调
+```bash
+export DATABASE_URL="postgres://postgres:postgres@localhost:5434/gbrain"
+gbrain query "问题"     # 混合搜索
+gbrain search "关键词"   # 关键词搜索
+gbrain import <dir>     # 导入知识
+gbrain sync --repo <路径> # 同步 Git 仓库
+```
+
+### 知识库内容
+| 数据源 | 文件数 | Chunks |
+|--------|--------|--------|
+| TradeOMS 源码+文档 | 251 | 1058 |
+| OpenClaw 工作区核心文件 | 14 | 36 |
+| **合计** | **265** | **1094** |
+
+### 管理
+- **海豚 HTTP 桥**: `sudo systemctl [start|stop|restart|status] aitms-gbrain-bridge.service`
+- **ollama**: `sudo docker [start|stop] ollama`
+- **PostgreSQL**: `sudo docker [start|stop] gbrain-postgres`
+- 日志: `/tmp/gbrain-bridge.log`
+
+### 已知限制
+- gbrain CLI 可能输出 ANSI 彩色文本，HTTP 桥会尽力解析但不保证完美结构化
+- nomic-embed-text 的 context_length 为 2048 tokens，超长文本会被截断
+- 目前嵌入了 265 个页面，搜索覆盖 TradeOMS + OpenClaw 工作区
+
 ## Related
 
 - [Agent workspace](/concepts/agent-workspace)

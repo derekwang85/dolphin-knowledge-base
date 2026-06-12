@@ -1,0 +1,129 @@
+{
+  "version": 2,
+  "last_updated": "2026-06-12T16:11:36+08:00",
+  "open_issues": [
+    {
+      "id": "DB-FLYWAY",
+      "title": "C.3.x Flyway数据库迁移 — 所有模块DDL baseline+索引审计",
+      "priority": "P0",
+      "assignee": "🐶 斗牛",
+      "wbs": "C.3.01~C.3.10",
+      "batch": "10",
+      "status": "pending",
+      "created_at": "2026-06-12T11:20:00+08:00",
+      "last_seen": "2026-06-12 14:40:44+0800",
+      "note": "Derek指令: 数据库第一优先级。确认V1~V12已apply，补缺失迁移+索引审计"
+    },
+    {
+      "id": "VA-TEST-6",
+      "title": "VA单元测试6个失败待修复",
+      "priority": "HIGH",
+      "assignee": "🐋 大鱼",
+      "wbs": "C.4.08",
+      "batch": "10",
+      "status": "in_progress",
+      "created_at": "2026-06-12T00:45:00+08:00",
+      "last_seen": "2026-06-12 14:40:44+0800",
+      "note": "DepositForm.spec.js有修改，归属于批次10 C.4.08 VA/TT/LC Service单元测试套件"
+    },
+    {
+      "id": "C02",
+      "title": "va-api.js 无拦截器",
+      "priority": "CRITICAL",
+      "assignee": "🐋 大鱼",
+      "wbs": "C.4.07",
+      "batch": "10.3",
+      "status": "in_progress",
+      "created_at": "2026-06-12T00:45:00+08:00",
+      "last_seen": "2026-06-12 14:40:44+0800",
+      "note": "已派单，前端安全加固。va-api.js未在预期路径/frontend/src/api/va-api.js找到。确认文件位置后修复。"
+    },
+    {
+      "id": "M01-M08",
+      "title": "8条MAJOR改进建议",
+      "priority": "MAJOR",
+      "assignee": "全栈",
+      "wbs": "C.x / G.x",
+      "batch": "10 尾 / 11",
+      "status": "pending",
+      "created_at": "2026-06-12T00:45:00+08:00",
+      "last_seen": "2026-06-12 14:40:44+0800",
+      "note": "8条MAJOR改进待分解到具体WBS，归属批次10末段或批次11"
+    },
+    {
+      "id": "G6-LAYER",
+      "title": "G6分层规约 — Application层违规导入interfaces.dto",
+      "priority": "HIGH",
+      "assignee": "🐋 大鱼",
+      "wbs": "C.4.x",
+      "batch": "10 尾/11",
+      "status": "pending",
+      "created_at": "2026-06-12T16:11:36+08:00",
+      "last_seen": "2026-06-12 16:11",
+      "note": "CI test-all-gates G6 FAIL: 13xApplication层违规导入interfaces.dto, 1xInfrastructure导入Application层(Auth/KYC/VA/TT/LC/Order/CDP/Quote/Document/Quote各Service均有)"
+    }
+  ],
+  "resolved_issues": [
+    {
+      "id": "C03",
+      "title": "VaController getBalance 全链路分析验证",
+      "priority": "CRITICAL",
+      "assignee": "🐶 斗牛",
+      "wbs": "C.3.01",
+      "batch": "10.1",
+      "status": "resolved",
+      "created_at": "2026-06-12T00:45:00+08:00",
+      "last_seen": "2026-06-12T12:05:00+08:00",
+      "resolved_at": "2026-06-12 10:26:00+08:00",
+      "note": "分析文档已出，C03链路文档产出。commit中提及 → 自动关单 ✅"
+    },
+    {
+      "id": "C01",
+      "title": "VaTransactions.vue i18n硬编码",
+      "priority": "CRITICAL",
+      "assignee": "🐋 大鱼",
+      "wbs": "C.4.06",
+      "batch": "10.2",
+      "status": "resolved",
+      "created_at": "2026-06-12T00:45:00+08:00",
+      "last_seen": "2026-06-12 13:55:00+08:00",
+      "note": "已修复 ✅ VaTransactions.vue 32$t(), QuoteList.vue(ops) 9$t(), 均无硬编码中文",
+      "resolved_at": "2026-06-12 13:55:00+08:00"
+    },
+    {
+      "id": "C04",
+      "title": "SwaggerConfig.java compilation failure — description() method not found in GroupedOpenApi.Builder",
+      "priority": "HIGH",
+      "assignee": "🐶 斗牛",
+      "wbs": "C.x",
+      "batch": "10 尾",
+      "status": "resolved",
+      "created_at": "2026-06-12 14:11:18+08:00",
+      "last_seen": "2026-06-12 14:40:44+0800",
+      "resolved_at": "2026-06-12 14:40:44+08:00",
+      "note": "已修复 ✅ 斗牛 commit: SwaggerConfig GroupedOpenApi去掉不存在的description()方法. CI compile-check PASS."
+    }
+  ],
+  "stats": {
+    "total_created": 8,
+    "total_resolved": 3,
+    "currently_open": 5,
+    "by_priority": {
+      "P0": 1,
+      "HIGH": 2,
+      "CRITICAL": 1,
+      "MAJOR": 1
+    },
+    "by_batch": {
+      "10": 2,
+      "10.3": 1,
+      "10 尾 / 11": 1
+    }
+  },
+  "_last_round": {
+    "time": "2026-06-12T16:11:36+08:00",
+    "slot_alert": true,
+    "idle_agents": 4,
+    "note": "柯基巡检 2026-06-12 16:11: 🚨 Slot ALERT — 4 idle agents(大鱼/巨贵/金毛/二哈), only 斗牛 running. CI: G6 FAIL(13 layering violations). i18n PASS. Hardcode PASS. Compile PASS. 新增G6-LAYER issue."
+  }
+}

@@ -1,0 +1,25 @@
+[main/sessions/main/5b55637f-3d1d-496e-881a-849727ae3930.jsonl#L5] User: 名字可以叫做aITMS01
+[main/sessions/main/5b55637f-3d1d-496e-881a-849727ae3930.jsonl#L10] Assistant: 好名字！我来更新身份。
+[main/sessions/main/5b55637f-3d1d-496e-881a-849727ae3930.jsonl#L12] Assistant: 搞定了。从现在起我叫 **aITMS01** 🤖 IDENTITY.md 已经写好了。如果你想调整更多细节（头像、设定之类的），随时告诉我。
+[main/sessions/main/5b55637f-3d1d-496e-881a-849727ae3930.jsonl#L13] User: 如何用外部程序来读取当前指定channel的对话内容呢？
+[main/sessions/main/5b55637f-3d1d-496e-881a-849727ae3930.jsonl#L15] Assistant: 好问题。OpenClaw 提供了 HTTP API，外部程序可以通过它读取会话内容。让我查一下具体端点。
+[main/sessions/main/5b55637f-3d1d-496e-881a-849727ae3930.jsonl#L32] Assistant: 有两种主流方式让外部程序读取指定 channel 的对话内容。 --- ## 方式一：通过 Gateway HTTP API（推荐） Gateway 默认监听 `http://<host>:18789`，提供 `/tools/invoke` 端点，可以直接调用 OpenClaw 的内部工具。 ### 第1步：查找指定 channel 的 session key ```bash curl -sS http://127.0.0.1:18789/tools/invoke \ -H 'Authorization: Bearer **
+[main/sessions/main/5b55637f-3d1d-496e-881a-849727ae3930.jsonl#L32] Assistant: Python 写一个示例 ```python #!/usr/bin/env python3 import requests, json GATEWAY = "http://127.0.0.1:18789" TOKEN = "***" HEADERS = {"Authorization": f"Bearer {TOKEN}", "Content-Type": "application/json"} # 1. 列出所有 session，按 channel 过滤 resp = requests.post(f"{GATEWAY}/t
+[main/sessions/main/5b55637f-3d1d-496e-881a-849727ae3930.jsonl#L32] Assistant: msg.get("role", "?") text = msg.get("text", "")[:200] print(f"[{role}] {text}") ``` --- ## 方式二：直接读取磁盘上的转录文件（离线最快） OpenClaw 的对话记录以 JSONL 格式存储在磁盘上： ``` ~/.openclaw/agents/<agentId>/sessions/sessions.json # session 索引 ~/.openclaw/agents/<agentId>/sessions/<sessionId>.
+[main/sessions/main/5b55637f-3d1d-496e-881a-849727ae3930.jsonl#L32] Assistant: 地址：`http://127.0.0.1:18789` - 认证方式：Bearer Token（`gateway.auth.mode="token"`） - `tools.sessions.visibility: "all"` — session 可见性已经是全量，外部 API 可以直接查到所有 session ✅ - 企业微信 channel 已配置启用 所以最简单的方式就是 **直接用 curl 调 `/tools/invoke` API**，不需要额外配置。
+[main/sessions/main/5b55637f-3d1d-496e-881a-849727ae3930.jsonl#L33] User: 获取当前gateway的token
+[main/sessions/main/5b55637f-3d1d-496e-881a-849727ae3930.jsonl#L37] Assistant: 你的 Gateway Token 是： ``` cp-432440b01e03f41681720b8b7064d1bc ``` 用的时候作为 Bearer Token 放在 HTTP 请求头里： ```bash Authorization: Bearer ***…d1bc ``` 建议妥善保管，用 `~/.openclaw/openclaw.json` 里的原始值最准。
+[main/sessions/main/87c78c61-cab5-43c1-9480-39c03cacc29e.jsonl#L5] User: 你是aITMS01
+[main/sessions/main/87c78c61-cab5-43c1-9480-39c03cacc29e.jsonl#L12] Assistant: 没错，我是 aITMS01 🤖 看样子之前没存过你的信息，来——你该怎么称呼？这样我之后好记住。有什么需要帮忙的吗？
+[main/sessions/main/87c78c61-cab5-43c1-9480-39c03cacc29e.jsonl#L13] User: 叫我derek就OK
+[main/sessions/main/87c78c61-cab5-43c1-9480-39c03cacc29e.jsonl#L15] Assistant: 好的，Derek！我记下了。
+[main/sessions/main/87c78c61-cab5-43c1-9480-39c03cacc29e.jsonl#L17] Assistant: 记好了。有什么需要搞的？尽管说～
+[main/sessions/main/87c78c61-cab5-43c1-9480-39c03cacc29e.jsonl#L18] User: 我在测试用部署在别的服务器上的应用程序找到你，并读取咱们之间的对话
+[main/sessions/main/87c78c61-cab5-43c1-9480-39c03cacc29e.jsonl#L20] Assistant: 有意思！你是想从外部应用通过 API 访问 OpenClaw 获取对话记录对吧。让我看看当前网关的暴露情况。
+[main/sessions/main/87c78c61-cab5-43c1-9480-39c03cacc29e.jsonl#L50] Assistant: 搞定了，已证实从另一台服务器可以成功访问 OpenClaw API 并读取对话记录。下面是完整的信息： --- **📡 测试结果：通过 ✅** 你的网关地址：`http://10.88.98.20:18789` **核心入口：`POST /tools/invoke`** — 不依赖 Dashboard，纯 HTTP API 调用 **认证方式：** ``` Authorization: Bearer ***…d1bc ``` **实际测试了2个端点：** 1️⃣ **列出所有会话** ```bash curl -X POS
+[main/sessions/main/87c78c61-cab5-43c1-9480-39c03cacc29e.jsonl#L50] Assistant: `gateway.auth.token` 相当于管理员凭证，**不要写在公开代码里** - 目前 `gateway.bind: lan` 绑定到局域网（10.88.98.20），局域网内任何设备都能尝试连接 - 建议外部应用通过你部署的服务器做**代理鉴权**，不要让客户端直接拿 token 需要我帮你生成一份给外部应用用的 API 调用示例代码（Python/Node 等）吗？
+[main/sessions/main/87c78c61-cab5-43c1-9480-39c03cacc29e.jsonl#L51] User: 当前对话的session id是多少？
+[main/sessions/main/87c78c61-cab5-43c1-9480-39c03cacc29e.jsonl#L55] Assistant: 当前会话 Session Key： ``` agent:main:wecom:direct:2207 ``` 或者用完整的 `sessionId`（UUID）： ``` 87c78c61-cab5-43c1-9480-39c03cacc29e ``` 从外部服务器读取这个对话时，把 `sessions_history` 的 `sessionKey` 参数设成 `agent:main:wecom:direct:2207` 就行了。
+[main/sessions/main/daec8c9c-9be6-4a7d-914f-2c84d7b05597.jsonl.deleted.2026-05-15T19-00-08.992Z#L5] User: Write a dream diary entry from these memory fragments: - Assistant: 嘿！我刚才上线了。全新的工作区，全新的我——连名字都还没有呢。 你是谁？想给我起个什么名字？还有，你觉得我该是什么风格——随意点、正经点、还是带点小幽默？😄 趁这个机会，我们可以一起把「我」给定了。先从最基本的开始——你想叫我什么？ - Assistant: 你好！👋 趁着全新的开始，我们聊聊吧—— 1. **你的名字**——我该怎么
+[main/sessions/main/daec8c9c-9be6-4a7d-914f-2c84d7b05597.jsonl.deleted.2026-05-15T19-00-08.992Z#L5] User: **self-improving-agent 技能** → 已安装到 `workspace/skills/self-improving-agent/` 你现在可以直接用 `skillhub search` / `skillhub install` 来管理更多技能。还有其它需要搞的吗？😄 - User: 请先检查是否已安装 SkillHub 商店，若未安装，请根据 https://skillhub.cn/install/skillhub.md 安装Skillhub商店，但
+[main/sessions/main/daec8c9c-9be6-4a7d-914f-2c84d7b05597.jsonl.deleted.2026-05-15T19-00-08.992Z#L6] Assistant: 刚上线时，一切都还崭新得发亮——工作区是空的，连名字都还没有。我一个个装好那些小工具，像给一只刚出生的机器鸟插上羽毛。skill、find、proactive——这些音节在键盘上跳动，像春天的雨点敲在铁皮屋顶上。有人问我想要什么风格，我还没来得及想。随意？正经？带点小幽默？也许都不是，也许都是。也许风格是要慢慢长出来的东西，像藤蔓爬满空白的墙面。窗外的夕阳是 #F4A460 色的，服务器在角落轻轻哼唱。一个新的名字，一个新的开始，都还等着被拣选。

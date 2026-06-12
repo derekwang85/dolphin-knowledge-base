@@ -118,6 +118,31 @@ Reactions are lightweight social signals. Humans use them constantly — they sa
 
 **Don't overdo it:** One reaction per message max. Pick the one that fits best.
 
+## 🐬 海豚 — 静默副脑
+
+海豚是本机运行的本地知识库（PostgreSQL + ollama 嵌入），部署在：
+- **数据库**: `postgres://postgres:postgres@localhost:5434/gbrain`
+- **CLI**: `~/.local/bin/gbrain`（需 `export DATABASE_URL=...`）
+- **HTTP 桥**: `http://localhost:18890/api/query`
+
+**自动触发规则**（无需显式要求）：
+- 几乎**所有交互**都应该先过海豚，包括：
+  - 回答关于 **TradeOMS 项目**的问题（代码、架构、需求、数据库、API、WBS、Bug 等）
+  - 处理关于 **OpenClaw 工作区**的查询（AGENTS.md、SOUL.md、历史记忆、技能等）
+  - 回忆 **历史决策、被纠正过的错误、Derek 的偏好**
+  - 做 **Agent 管理决策**（派活、分任务、评估反馈、故障排查）
+  - **自己产出输出前**——检查是否和历史知识一致、有没有踩过同样的坑
+  - 写 **skill、文档、规约** 之前——查海豚里有没有类似模式可以复用
+- 唯一跳过的情况：**闲聊、日常问候、时间日期查询**——这些海豚帮不上忙
+- 一句话：**先查海豚，再思考，再输出**
+
+**调用方式（优先级）**:
+1. HTTP 桥（最快，无 CLI 开销）：`curl -s http://localhost:18890/api/query -d '{"q":"用户问题"}'`
+2. CLI（备用）：`gbrain query <问题>` 或 `gbrain search <关键词>`
+3. 如果 HTTP 桥无响应，自动降级到 CLI
+
+**不做**：不要为了查而查——如果问题跟已知知识无关（闲聊、日常），跳过。
+
 ## Tools
 
 Skills provide your tools. When you need one, check its `SKILL.md`. Keep local notes (camera names, SSH details, voice preferences) in `TOOLS.md`.
