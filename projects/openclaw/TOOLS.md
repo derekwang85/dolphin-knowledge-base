@@ -276,3 +276,11 @@ gbrain sync --repo <路径> # 同步 Git 仓库
 ## Related
 
 - [Agent workspace](/concepts/agent-workspace)
+
+### 知识库Git仓库
+- **路径**: `~/gbrain-brain/`
+- **GitHub**: `git@github.com:derekwang85/dolphin-knowledge-base.git`（需Derek创建空仓库）
+- **自动同步**: cron `海豚-sync` 每天凌晨3:00
+- **手动同步**: `bash ~/.openclaw/workspace/scripts/dolphin-sync.sh`
+- **内容**: OpenClaw工作区核心文件 + 记忆 + 技能 + 经验沉淀 + 审计报告
+- **注意**: TradeOMS源码不走此仓库，由 `gbrain sync --repo` 管理

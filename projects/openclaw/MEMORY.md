@@ -85,3 +85,20 @@
 - aITMS Knowledge API — 全线贯通验证 ✅: ✅ `skills/aitms-knowledge-get/SKILL.md` — 补充已验证接口表、字段说明、curl 示例、实测数据; ✅ `TOOLS.md` — 新增 aITMS Knowledge API 章节（接口汇总 + 快速测试命令） [score=0.838 recalls=0 avg=0.620 source=memory/2026-05-26.md:22-23]
 <!-- openclaw-memory-promotion:memory:memory/2026-05-26.md:8:11 -->
 - aITMS Knowledge API — 全线贯通验证 ✅: `POST /api/v1/auth/login` → 成功返回 UUID token（200 OK）; `GET /api/v1/knowledge/library/search?reviewStatus=PUBLISHED` → 返回已发布文档（含手册和工单）; `GET /api/v1/knowledge/library/documents/3` → 返回《国金CTRM操作手册0824版》详情（110页）; `GET /api/v1/knowledge/library/versions?documentId=3` → 返回版本信息 [score=0.838 recalls=0 avg=0.620 source=memory/2026-05-26.md:8-11]
+
+## Promoted From Short-Term Memory (2026-06-13)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-06-09.md:12:15 -->
+- 产出: `04-adr/ADR-005-i18n.md` — i18n 架构决策; `10-i18n/` — 策略 + 6 道门禁 + 术语表 + CI 检查脚本; `11-product-manual/` — 产品手册框架（buyer/operations/openclaw 三端共 32 个功能骨架）; `06-runbook/` 3 个文件 — 补充 i18n 部署/运维/环境检查 [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-09.md:12-15]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-09.md:16:18 -->
+- 产出: `09-migrations/phase-plan.md` — 各 Phase 标注 i18n + 手册交付节点; `12-development-guide/` — 开发规约全套（工作流、PR checklist、合规速查）; `12-development-guide/spec-ripple-analysis.md` — 元方法论：规约涟漪分析 [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-09.md:16-18]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-09.md:23:26 -->
+- 做得好的 ✅: 任务理解准确，从 ADR 决策到落地执行全链路覆盖; 不满足于「加个 ADR + 两个文件」，而是系统地构建了一整层规约体系; quick check 矩阵的设计让未来新增规约时有章可循; 与现有 Phase 5 自然衔接形成闭环 [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-09.md:23-26]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-09.md:29:32 -->
+- 小瑕疵 ⚠️: **第一轮遗漏 runbook/phase-plan 的联动更新** — Derek 指出后才补上; root cause：只看到了「i18n 门禁 = 开发阶段的事」，没意识到「新规约的引入会涟漪扩散到部署/运维/规划文档」; fix：直接沉淀为 spec-ripple-analysis.md 元方法论，纳入 #0 核心规约; **README 中漏了 ADR-005 的目录入口标记** — Derek 没提但我自检发现 [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-09.md:29-32]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-09.md:33:33 -->
+- 小瑕疵 ⚠️: 没有在一开始就创建 `12-development-guide/`，而是补 runbook 时才意识到需要把门禁时序串起来 [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-09.md:33-33]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-09.md:6:6 -->
+- 任务: Derek 要求完善 derekcoding，增加： [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-09.md:6-6]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-09.md:7:9 -->
+- 任务: i18n 语言需求规划和相关门禁（含 ADR）; 产品手册（逐字段、逐功能开发）; 对应规约文件放到 OMS 合适文件夹 [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-09.md:7-9]
