@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "last_updated": "2026-06-12T16:11:36+08:00",
+  "last_updated": "2026-06-14 02:20:06+08:00",
   "open_issues": [
     {
       "id": "DB-FLYWAY",
@@ -11,7 +11,7 @@
       "batch": "10",
       "status": "pending",
       "created_at": "2026-06-12T11:20:00+08:00",
-      "last_seen": "2026-06-12 14:40:44+0800",
+      "last_seen": "2026-06-14 01:18:00+08:00",
       "note": "Derek指令: 数据库第一优先级。确认V1~V12已apply，补缺失迁移+索引审计"
     },
     {
@@ -23,7 +23,7 @@
       "batch": "10",
       "status": "in_progress",
       "created_at": "2026-06-12T00:45:00+08:00",
-      "last_seen": "2026-06-12 14:40:44+0800",
+      "last_seen": "2026-06-14 01:18:00+08:00",
       "note": "DepositForm.spec.js有修改，归属于批次10 C.4.08 VA/TT/LC Service单元测试套件"
     },
     {
@@ -35,7 +35,7 @@
       "batch": "10.3",
       "status": "in_progress",
       "created_at": "2026-06-12T00:45:00+08:00",
-      "last_seen": "2026-06-12 14:40:44+0800",
+      "last_seen": "2026-06-14 01:18:00+08:00",
       "note": "已派单，前端安全加固。va-api.js未在预期路径/frontend/src/api/va-api.js找到。确认文件位置后修复。"
     },
     {
@@ -47,7 +47,7 @@
       "batch": "10 尾 / 11",
       "status": "pending",
       "created_at": "2026-06-12T00:45:00+08:00",
-      "last_seen": "2026-06-12 14:40:44+0800",
+      "last_seen": "2026-06-14 01:18:00+08:00",
       "note": "8条MAJOR改进待分解到具体WBS，归属批次10末段或批次11"
     },
     {
@@ -59,7 +59,7 @@
       "batch": "10 尾/11",
       "status": "pending",
       "created_at": "2026-06-12T16:11:36+08:00",
-      "last_seen": "2026-06-12 16:11",
+      "last_seen": "2026-06-14 01:18:00+08:00",
       "note": "CI test-all-gates G6 FAIL: 13xApplication层违规导入interfaces.dto, 1xInfrastructure导入Application层(Auth/KYC/VA/TT/LC/Order/CDP/Quote/Document/Quote各Service均有)"
     }
   ],
@@ -98,9 +98,9 @@
       "wbs": "C.x",
       "batch": "10 尾",
       "status": "resolved",
-      "created_at": "2026-06-12 14:11:18+08:00",
-      "last_seen": "2026-06-12 14:40:44+0800",
-      "resolved_at": "2026-06-12 14:40:44+08:00",
+      "created_at": "2026-06-12T14:11:18+08:00",
+      "last_seen": "2026-06-12T14:40:44+08:00",
+      "resolved_at": "2026-06-12T14:40:44+08:00",
       "note": "已修复 ✅ 斗牛 commit: SwaggerConfig GroupedOpenApi去掉不存在的description()方法. CI compile-check PASS."
     }
   ],
@@ -121,9 +121,22 @@
     }
   },
   "_last_round": {
-    "time": "2026-06-12T16:11:36+08:00",
+    "time": "2026-06-14 02:20:06+08:00",
     "slot_alert": true,
-    "idle_agents": 4,
-    "note": "柯基巡检 2026-06-12 16:11: 🚨 Slot ALERT — 4 idle agents(大鱼/巨贵/金毛/二哈), only 斗牛 running. CI: G6 FAIL(13 layering violations). i18n PASS. Hardcode PASS. Compile PASS. 新增G6-LAYER issue."
+    "agents_running": [
+      "🐶 斗牛",
+      "🐋 大鱼",
+      "🐩 巨贵",
+      "🐺 二哈",
+      "🐹 仓鼠",
+      "🦅 猎隼"
+    ],
+    "idle_agents": [
+      "🦮 金毛",
+      "🦊 狐獴"
+    ],
+    "offline_agents": [],
+    "unacked": 2,
+    "note": "柯基巡检 2026-06-14 02:19(周日凌晨): 🚨 alert持续(与上轮同类). 金毛worker进程离线但queue有2个P2待办; 斗牛/大鱼/巨贵队列=0但均在执行中(非空闲,多个reasonix进程活跃). i18n: EN有46个esign/...key缺ZH(开发中功能), ZH有29个ai.analysis/buyer.dashboard/esign/kyc key缺EN. 凌晨时段低负载,无需紧急处理."
   }
 }

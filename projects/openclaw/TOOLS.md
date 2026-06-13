@@ -273,6 +273,15 @@ gbrain sync --repo <路径> # 同步 Git 仓库
 - nomic-embed-text 的 context_length 为 2048 tokens，超长文本会被截断
 - 目前嵌入了 265 个页面，搜索覆盖 TradeOMS + OpenClaw 工作区
 
+## TradeOMS Dev 环境
+
+- **本机 IP**: 10.88.97.77
+- **前端**: `http://10.88.97.77:5173`
+- **后端 API**: `http://10.88.97.77:8080/api`
+- **MySQL**: localhost:3306 / tradeoms (root/tradeoms_dev_2026)
+- **Redis**: localhost:6379
+- **测试账号**: `admin` / `password123`, `trader01` / `password123`, `ops01` / `password123`
+
 ## Related
 
 - [Agent workspace](/concepts/agent-workspace)
