@@ -1,0 +1,10 @@
+{
+  "lastChecks": {
+    "agent-keepalive": "2026-06-14T20:23+08:00"
+  },
+  "lastKeepalive": {
+    "status": "ok",
+    "restarted": ["二哈"],
+    "corgi_alert": true
+  }
+}
