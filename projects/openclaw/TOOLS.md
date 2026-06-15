@@ -220,7 +220,7 @@ python3 -c "tok=''.join(chr(c) for c in [67,98,110,98,50,48,50,54]); ..."
 ```
 PostgreSQL + pgvector (port 5434)
   ↓ 嵌入
-ollama + nomic-embed-text (port 11434) — 本地纯 CPU
+ollama + bge-m3 (port 11434) — 本地纯 CPU, 1024维
   ↓ HTTP API
 海豚 HTTP 桥 (Python, port 18890) — OpenClaw 调用入口
 ```
@@ -229,7 +229,7 @@ ollama + nomic-embed-text (port 11434) — 本地纯 CPU
 | 组件 | 状态 | 位置/端口 |
 |------|------|----------|
 | PostgreSQL 16 + pgvector | ✅ Docker | port 5434, 库 gbrain |
-| ollama + nomic-embed-text | ✅ Docker | port 11434 |
+| ollama + bge-m3 | ✅ Docker | port 11434 |
 | gbrain CLI | ✅ ~/.local/bin/gbrain | 257MB binary |
 | 海豚 HTTP 桥 | ✅ systemd | port 18890 |
 
@@ -270,7 +270,7 @@ gbrain sync --repo <路径> # 同步 Git 仓库
 
 ### 已知限制
 - gbrain CLI 可能输出 ANSI 彩色文本，HTTP 桥会尽力解析但不保证完美结构化
-- nomic-embed-text 的 context_length 为 2048 tokens，超长文本会被截断
+- bge-m3 的 context_length 为 8192 tokens，超过自动截断
 - 目前嵌入了 265 个页面，搜索覆盖 TradeOMS + OpenClaw 工作区
 
 ## TradeOMS Dev 环境

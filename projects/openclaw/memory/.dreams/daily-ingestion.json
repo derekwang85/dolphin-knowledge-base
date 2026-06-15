@@ -1,35 +1,40 @@
 {
   "version": 1,
   "files": {
+    "memory/2026-06-14.md": {
+      "mtimeMs": 1781454897612,
+      "size": 17130,
+      "lastDreamingDayIngested": "2026-06-15"
+    },
     "memory/2026-06-13.md": {
       "mtimeMs": 1781288179317,
       "size": 249,
-      "lastDreamingDayIngested": "2026-06-14"
+      "lastDreamingDayIngested": "2026-06-15"
     },
     "memory/2026-06-12.md": {
       "mtimeMs": 1781275458347,
       "size": 6502,
-      "lastDreamingDayIngested": "2026-06-14"
+      "lastDreamingDayIngested": "2026-06-15"
     },
     "memory/2026-06-11.md": {
       "mtimeMs": 1781162595829,
       "size": 3272,
-      "lastDreamingDayIngested": "2026-06-14"
+      "lastDreamingDayIngested": "2026-06-15"
     },
     "memory/2026-06-10.md": {
       "mtimeMs": 1781104815846,
       "size": 2152,
-      "lastDreamingDayIngested": "2026-06-14"
+      "lastDreamingDayIngested": "2026-06-15"
     },
     "memory/2026-06-10-tradeoms-summary.md": {
       "mtimeMs": 1781105563076,
       "size": 5426,
-      "lastDreamingDayIngested": "2026-06-14"
+      "lastDreamingDayIngested": "2026-06-15"
     },
     "memory/2026-06-09.md": {
       "mtimeMs": 1781011610512,
       "size": 3152,
-      "lastDreamingDayIngested": "2026-06-14"
+      "lastDreamingDayIngested": "2026-06-15"
     }
   }
 }

@@ -1,39 +1,6 @@
 # Long-Term Memory
 
 
-## Promoted From Short-Term Memory (2026-05-24)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-05-19.md:24:27 -->
-- | 来源 | Envelope 字段 | 值 | |------|--------------|-----| | Channel | `source` | `"wecom"` | | Sender | `senderId` | 对应 channel 用户 ID | [score=0.815 recalls=0 avg=0.620 source=memory/2026-05-19.md:24-27]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-19.md:28:30 -->
-- | Sender | `senderDisplayName` | 用户显示名 | | Message | `content` | 消息原文 | | Service | `serviceCode` | 一次: `ops-general\|platform-database\|access-identity\|integration-wecom` | [score=0.815 recalls=0 avg=0.620 source=memory/2026-05-19.md:28-30]
-
-## Promoted From Short-Term Memory (2026-05-25)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-05-20.md:5:5 -->
-- **背景**: Derek 确认标银 Excel 问题不是 CTRM 相关，客户输入时误分类。触发知识交互体系升级。 [score=0.815 recalls=0 avg=0.620 source=memory/2026-05-20.md:5-5]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-20.md:14:14 -->
-- **关键洞察**: [score=0.815 recalls=0 avg=0.620 source=memory/2026-05-20.md:14-14]
-
-## Promoted From Short-Term Memory (2026-05-27)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-05-22.md:4:5 -->
-- **Context**: 之前 aITMS 收不到企微图片消息，因为在 ingress 信封中只传了过期的 PicUrl。 **Solution**: 方案 B — 起一个静态文件服务器，把本地媒体文件暴露为 HTTP 可访问 URL。 [score=0.822 recalls=0 avg=0.620 source=memory/2026-05-22.md:4-5]
-
-## Promoted From Short-Term Memory (2026-06-02)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-05-26.md:5:5 -->
-- **结果**: 所有 aITMS 知识 API 接口实测通过。 [score=0.866 recalls=0 avg=0.620 source=memory/2026-05-26.md:5-5]
-
-## Promoted From Short-Term Memory (2026-06-03)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-05-26.md:27:27 -->
-- Derek 指出 `aitms-openclaw-ingress-proxy`（第一个 aITMS 相关 skill）也需要更新，主要是 Auth 头问题。 [score=0.890 recalls=0 avg=0.620 source=memory/2026-05-26.md:27-27]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-28.md:5:5 -->
-- Derek 要求记录所有与我（aITMS01）加好友的企微用户的联系人信息。 [score=0.890 recalls=0 avg=0.620 source=memory/2026-05-28.md:5-5]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-28.md:9:12 -->
-- | senderId | 姓名 | 渠道 | 备注 | |----------|------|------|------| | 2207 | Derek | WeCom 私聊 | 管理员，全部权限 | | 1475 | 仲欢 | WeCom 私聊 | CTRM 打榜考试用户 | [score=0.890 recalls=0 avg=0.620 source=memory/2026-05-28.md:9-12]
-
 ## Promoted From Short-Term Memory (2026-06-04)
 
 <!-- openclaw-memory-promotion:memory:memory/2026-05-28.md:13:13 -->
@@ -123,3 +90,26 @@
 3. 从 Reasonix fast mode → **精细提示词调教模式**
 4. 密切观察 Cline 效果再做评估
 5. 未来可能架构：Reasonix(批量) + Cline(深度) 双轨协作
+
+## Promoted From Short-Term Memory (2026-06-15)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-06-10-tradeoms-summary.md:18:21 -->
+- 上午 (09:00~12:00): 团队ABCD岗制度确立; OE_V1 52张Figma截图全分析 → 发现CDP缺失业务域; Document Management模块设计+PRD; 系统全景架构图 system-map-complete.md [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-10-tradeoms-summary.md:18-21]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-10-tradeoms-summary.md:24:27 -->
+- 下午 (14:00~18:00): **大鱼** → KYC前端组件填充 → CDP前端精修 → Document前端; **斗牛** → Document后端 → Quote后端全部8API+状态机+限价规则; **巨贵** → Document前端框架(UI还原) → 代码审查; WBS补充: 横切关注点C/A/B(C.1~C.12) + D文档专项 + E API契约 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-10-tradeoms-summary.md:24-27]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-10-tradeoms-summary.md:30:33 -->
+- 晚上 (19:00~23:45): **大鱼** → Order前端1,466行 → VA前端1,219行 → TT前端 → LC前端1,532行 → 6个联调脚本; **斗牛** → Order后端1,069行 → VA后端431行 → TT后端853行 → LC后端1,050行 → JWT安全底座; **柯基** 🆕 → aider安装+MiniMax M2.7配置 → 纳入团队建制; **巨贵** → 代码审查报告+编译检查脚本 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-10-tradeoms-summary.md:30-33]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-10-tradeoms-summary.md:34:36 -->
+- 晚上 (19:00~23:45): **二哈** → 改名+明早08:00 cron; 全员昵称体系建立 (边牧/大鱼/斗牛/巨贵/柯基/二哈); WBS F-K-U 全量扩充 (UAT/UX/平台/运维/安全/集成/UI精修) [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-10-tradeoms-summary.md:34-36]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-10-tradeoms-summary.md:5:8 -->
+- 📊 核心数据: | 指标 | 数值 | |------|:----:| | Commits | 26 | | 代码新增 | 30,133 lines | [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-10-tradeoms-summary.md:5-8]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-10-tradeoms-summary.md:9:11 -->
+- 📊 核心数据: | 文件变更 | 386 files | | WBS任务数 | 243 → 600+ | | Agent工时 | 6 名成员全时段 | [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-10-tradeoms-summary.md:9-11]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-10.md:12:15 -->
+- 整体产出（跨双通道）: | §3 CDP | 全量实现 | 10 组件 | ✅ | | §4 Document | 全量实现 | 6 组件 | ✅ | | §5 Quote | 全量 + 限价规则引擎 | 精修中 | ✅ | | §6 Order | 全量 (Reasonix) | 已完成 | ✅ | [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-10.md:12-15]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-10.md:16:19 -->
+- 整体产出（跨双通道）: | §7 VA | 全量实现 | 全量 (大鱼) | ✅ | | §8 TT | 全量实现 | 前端完成 | ✅ | | §9 LC | 全量实现 | 前端+后端全部完成 | ✅ | | §10 OE | — | — | 🔲 | [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-10.md:16-19]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-10.md:20:21 -->
+- 整体产出（跨双通道）: | §11 Buyer | JWT+RBAC 安全底座 | — | ⏳ | | §12 集成测试 | 12项联调测试 | — | ⏳ | [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-10.md:20-21]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-10.md:25:28 -->
+- 本通道关键交付: **架构治理**: 单一事实源 6 个软链接、derekcoding 原则 9 条落地; **DDL 修正**: 新增 `oms_role` / `oms_audit_log` / `oms_business_event`，总 68 表; **质量门禁**: G1-G11 + D1-D12 延迟触发器; **配置兜底**: MinioService @Value 修复 + pre-submit 门禁 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-10.md:25-28]
