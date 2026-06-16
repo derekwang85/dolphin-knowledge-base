@@ -830,3 +830,4 @@
 [main/sessions/main/b00de7e4-232c-421d-9dda-335f72d9d7fd.jsonl#L25] Assistant: OpenRouter 回来了！让我写完整的巡检+调度报告。
 [main/sessions/main/b00de7e4-232c-421d-9dda-335f72d9d7fd.jsonl#L27] Assistant: Now let me create the individual dispatch files for each agent.
 [main/sessions/main/b00de7e4-232c-421d-9dda-335f72d9d7fd.jsonl#L34] Assistant: 🌤 **白班巡检 08:05** — 全员饱和调度，已推送远程 ✅ --- **Agent 状态：** | Agent | 状态 | 本次派单 | |-------|:----:|---------| | 🐶 斗牛 | 🟢 空闲 | **Order后端增强** — C02 CRITICAL修复 + 状态机完善 | | 🐋 大鱼 | 🟢 空闲 | **VA前端增强** — 充值/冻结/流水/图表（进度最低20%模块） | | 🐩 巨贵 | 🟢 空闲 | **手册 VA/TT/LC 三章节** | | 🐺 二哈 
+[main/sessions/main/9c42118f-0752-450a-91b8-a072248a3529.jsonl#L54] Assistant: **Significant mismatch detected** — The DDL has: `file_name`, `file_url`, `file_size`, `mime_type`, `uploaded_at`, `uploaded_by` - Entity has: `voucherNo`, `voucherStatus`, `amount`, `currency`, `voucherDate`, `verifiedBy`, `verifiedAt`, `llmParsed`, `llmResultJson

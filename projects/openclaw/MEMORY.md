@@ -1,58 +1,6 @@
 # Long-Term Memory
 
 
-## Promoted From Short-Term Memory (2026-06-04)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-05-28.md:13:13 -->
-- | 3296 | 杨晓明 | WeCom 私聊 | CTRM 打榜考试用户，也在群里 | [score=0.914 recalls=0 avg=0.620 source=memory/2026-05-28.md:13-13]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-28.md:17:17 -->
-- 以下用户已通过 WeCom 私聊与我互动过，但未告知姓名，企微通讯录 MCP（contact/get_userlist）不可用（846610），无法自动查人名。 [score=0.914 recalls=0 avg=0.620 source=memory/2026-05-28.md:17-17]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-28.md:19:22 -->
-- | senderId | 说过什么 | 可问名字的时机 | |----------|----------|----------------| | 839 | 发过"考试" | 下次触发考试时可先问姓名 | | 1896 | 问过 CTRM 时段均价/每日行情 | 下次聊天时可顺便问 | [score=0.914 recalls=0 avg=0.620 source=memory/2026-05-28.md:19-22]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-28.md:23:25 -->
-- | 2259 | 有聊天记录 | 下次聊天时可顺便问 | | 2950 | 发过"你好" | 下次打招呼时可问 | | 3191 | 问过付款申请、仓单期转现 | 下次聊天时可顺便问 | [score=0.914 recalls=0 avg=0.620 source=memory/2026-05-28.md:23-25]
-
-## Promoted From Short-Term Memory (2026-06-05)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-05-26.md:7:7 -->
-- **验证内容**: [score=0.874 recalls=0 avg=0.620 source=memory/2026-05-26.md:7-7]
-
-## Promoted From Short-Term Memory (2026-06-06)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-05-26.md:15:15 -->
-- **关键发现**: [score=0.865 recalls=0 avg=0.620 source=memory/2026-05-26.md:15-15]
-
-## Promoted From Short-Term Memory (2026-06-07)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-05-26.md:21:21 -->
-- **更新记录**: [score=0.857 recalls=0 avg=0.620 source=memory/2026-05-26.md:21-21]
-
-## Promoted From Short-Term Memory (2026-06-08)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-05-26.md:29:29 -->
-- **修复内容**: [score=0.843 recalls=0 avg=0.620 source=memory/2026-05-26.md:29-29]
-
-## Promoted From Short-Term Memory (2026-06-10)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-06-01.md:3:6 -->
-- 21:00 CTRM打榜晚间排行榜推送: 今日共有 8 人参与答题; 排行榜已推送至每位用户私聊; Derek 以 100% 正确率 (3套) 稳居榜首; 胡贻哲、o.+ 并列亚军 [score=1.000 recalls=0 avg=0.620 source=memory/2026-06-01.md:3-6]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-28.md:34:37 -->
-- 21:00 CTRM打榜晚间排行榜推送: 执行了 cron 任务 `ctrm-quiz-nightly`; 今日考试用户：3296（杨晓明）— 2次，平均正确率 85.0%; 已向 杨晓明（3296）推送排行榜和个人明细; Derek（2207）今日无考试记录，未推送 [score=0.943 recalls=0 avg=0.620 source=memory/2026-05-28.md:34-37]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-27.md:4:4 -->
-- 21:00 - CTRM 打榜晚间排行榜推送: 执行了晚间排行榜推送（cron: ctrm-quiz-nightly） [score=0.933 recalls=0 avg=0.620 source=memory/2026-05-27.md:4-4]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-27.md:6:9 -->
-- 21:00 - CTRM 打榜晚间排行榜推送: **杨晓明 (3296)**: 4次考试，平均正确率 62.5% — 达标 ✅; Derek (2207): 1次考试 — 未达标（≥2次方可推送）; 🏆 排行榜：🥇 杨晓明 (62.5%, 4次); 已向杨晓明私聊推送排行榜+个人明细 [score=0.933 recalls=0 avg=0.620 source=memory/2026-05-27.md:6-9]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-28.md:29:30 -->
-- 待办: [ ] 企业微信通讯录 MCP 不可用（contact/get_userlist 返回 846610），需要 Derek 在企微应用配置中开通 contact MCP 权限后，才能自动查人名; [ ] 下次与未留名用户聊天时，主动询问姓名并记入本记录 [score=0.909 recalls=0 avg=0.620 source=memory/2026-05-28.md:29-30]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-26.md:12:13 -->
-- aITMS Knowledge API — 全线贯通验证 ✅: `GET /api/v1/knowledge/library/chunks?versionId=3` → 返回110个分片; `GET /api/v1/knowledge/library/documents/chunks?documentKey=manual:pdf:6303a45ce53e4da8` → 返回110页完整内容 [score=0.838 recalls=0 avg=0.620 source=memory/2026-05-26.md:12-13]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-26.md:16:19 -->
-- aITMS Knowledge API — 全线贯通验证 ✅: versidions 接口返回的 versionId 字段名为 `id`（不是 `versionId`）; 手册内容: "期现一体化管理系统（CTRM）操作手册 / 国金金属网信息科技有限公司"; documentKey 格式: 手册 `manual:pdf:<hash>`，工单 `ticket:<编号>`; chunk 内容格式: "第 N 页:\n<内容>" [score=0.838 recalls=0 avg=0.620 source=memory/2026-05-26.md:16-19]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-26.md:22:23 -->
-- aITMS Knowledge API — 全线贯通验证 ✅: ✅ `skills/aitms-knowledge-get/SKILL.md` — 补充已验证接口表、字段说明、curl 示例、实测数据; ✅ `TOOLS.md` — 新增 aITMS Knowledge API 章节（接口汇总 + 快速测试命令） [score=0.838 recalls=0 avg=0.620 source=memory/2026-05-26.md:22-23]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-26.md:8:11 -->
-- aITMS Knowledge API — 全线贯通验证 ✅: `POST /api/v1/auth/login` → 成功返回 UUID token（200 OK）; `GET /api/v1/knowledge/library/search?reviewStatus=PUBLISHED` → 返回已发布文档（含手册和工单）; `GET /api/v1/knowledge/library/documents/3` → 返回《国金CTRM操作手册0824版》详情（110页）; `GET /api/v1/knowledge/library/versions?documentId=3` → 返回版本信息 [score=0.838 recalls=0 avg=0.620 source=memory/2026-05-26.md:8-11]
-
 ## Promoted From Short-Term Memory (2026-06-13)
 
 <!-- openclaw-memory-promotion:memory:memory/2026-06-09.md:12:15 -->
@@ -113,3 +61,22 @@
 - 整体产出（跨双通道）: | §11 Buyer | JWT+RBAC 安全底座 | — | ⏳ | | §12 集成测试 | 12项联调测试 | — | ⏳ | [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-10.md:20-21]
 <!-- openclaw-memory-promotion:memory:memory/2026-06-10.md:25:28 -->
 - 本通道关键交付: **架构治理**: 单一事实源 6 个软链接、derekcoding 原则 9 条落地; **DDL 修正**: 新增 `oms_role` / `oms_audit_log` / `oms_business_event`，总 68 表; **质量门禁**: G1-G11 + D1-D12 延迟触发器; **配置兜底**: MinioService @Value 修复 + pre-submit 门禁 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-10.md:25-28]
+
+## Promoted From Short-Term Memory (2026-06-16)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-06-10.md:6:6 -->
+- 整体产出（跨双通道）: **30,133 行代码变更，386 个文件**，7 个 Agent 参与。 [score=0.834 recalls=0 avg=0.620 source=memory/2026-06-10.md:6-6]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-10.md:8:11 -->
+- 整体产出（跨双通道）: | 模块 | 后端 | 前端 | 状态 | |------|------|------|------| | §1 项目基础 | 规约体系 80 文档 | — | ✅ | | §2 KYC | 全量 API (7端点) 编译通过 | Vue 组件就绪 | ✅ | [score=0.834 recalls=0 avg=0.620 source=memory/2026-06-10.md:8-11]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-11.md:14:17 -->
+- 🐕 巡检 11:20: **HEAD (workspace)**: ea6158c 扩展工程规范 ✅; **HEAD (TradeOMS)**: 2f00fe2 🐩 巨贵 产品手册完整性审计 Batch 4 ✅; **Free模型**: `openrouter/free` ✅ (已验证可用); **🐶 斗牛**: Java TradeOMS 进程运行中 (自10:54) ✅ — 之前10:40的🔴已解除 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-11.md:14-17]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-11.md:18:21 -->
+- 🐕 巡检 11:20: **🧸 泰迪**: CodeBuddy 运行 1h43min — 仍在处理VA前端首单任务 ⏳; **🐋 大鱼**: 今日有产出 (i18n, 审计日志AOP, login修复) ✅; **🐩 巨贵**: 活跃 — Batch8/9审查 + 产品手册完整性审计 Batch4 ✅; **🐺 二哈**: freecode 模型可用 (openrouter/free) ✅ [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-11.md:18-21]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-11.md:22:23 -->
+- 🐕 巡检 11:20: **🐕 柯基**: 上次提交 i18n修复 (昨夜) — 暂无新任务; **🟢 整体**: 无红灯，全员正常运作 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-11.md:22-23]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-11.md:26:28 -->
+- 🐕 巡检 13:04 — 夜巡派活: **HEAD (workspace)**: 4c7ad71 docs: ops-manual 二哈模型红线规则 ✅; **HEAD (TradeOMS)**: ed72cc5 Figma截图对照表+缺口分析 ✅; **CPU**: 3个reasonix所有 0.0% >1h → 🟢 空闲，立刻派活 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-11.md:26-28]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-11.md:4:7 -->
+- 🐕 巡检 10:40: **HEAD**: 2044d0b 🐩 巨贵 审查报告#5 (10:39, 1分钟前) ✅; **Free模型**: `openrouter/free` → gpt-oss-20b ✅ WORKING; **🐶 斗牛**: 无运行中的后端进程 ⚠️; **🧸 泰迪**: CodeBuddy 运行中 (09:37起) — VA前端首单任务 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-11.md:4-7]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-11.md:8:11 -->
+- 🐕 巡检 10:40: **🐩 巨贵**: 刚完成审查报告#5 (448行); **🐺 二哈**: freecode 存在，模型可用 ✅; **🐋 大鱼**: 未见活跃; **🐕 柯基**: 上次提交为i18n修复 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-11.md:8-11]
