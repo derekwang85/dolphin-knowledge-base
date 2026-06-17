@@ -624,3 +624,12 @@
 [main/sessions/main/9c29b3c7-dc51-4fb5-9943-e32676c95670.jsonl.reset.2026-06-13T02-33-24.131Z#L212] Assistant: 提案已生成，内容就是今早我们一直在讨论的那套东西（三层涟漪模型 + WBS 闭环 + 柯基兜底）。我试一下 apply，你看看 approve：
 [main/sessions/main/9c29b3c7-dc51-4fb5-9943-e32676c95670.jsonl.reset.2026-06-13T02-33-24.131Z#L214] Assistant: 已经落定了。看看效果：
 [main/sessions/main/9c29b3c7-dc51-4fb5-9943-e32676c95670.jsonl.reset.2026-06-13T02-33-24.131Z#L217] Assistant: 落地了，`skills/ripple-analysis-guide/SKILL.md` 已写入工作区 ✅ 新增的 skill 包含： - 三层涟漪模型（直接→间接→系统性根因） - 5 种触发条件（系统性隐患、CRITICAL、跨模块、基础设施 etc.） - 4 步执行流程（分析→WBS→派单→验证） - 涟漪分析报告模板 - 4 条红线规则 - 柯基自动化兜底 (`ci/audit-wbs-crosscheck.sh`) 以后任何 bug 发现时都会自动触发
+[main/sessions/main/6dd8cfed-4d24-4c82-960f-b3af96cd43c0.jsonl.reset.2026-06-12T22-45-55.771Z#L196] User: 在现有6个小时审计中加入对gbrain的使用的审计，另外gbrain，在我们的体系里命名为“海豚”
+[main/sessions/main/6dd8cfed-4d24-4c82-960f-b3af96cd43c0.jsonl.reset.2026-06-12T22-45-55.771Z#L203] Assistant: 找到了！`tradeoms-6h-audit` 每 21600000ms（6小时）执行一次。先更新它，把海豚审计加进去，然后统一改名。
+[main/sessions/main/6dd8cfed-4d24-4c82-960f-b3af96cd43c0.jsonl.reset.2026-06-12T22-45-55.771Z#L205] Assistant: 审计任务已更新 ✅ 现在改名——把所有 OpenClaw 侧引用从 "gbrain" 改成"海豚"：
+[main/sessions/main/6dd8cfed-4d24-4c82-960f-b3af96cd43c0.jsonl.reset.2026-06-12T22-45-55.771Z#L213] Assistant: 现在更新 skill 和 systemd 服务名称：
+[main/sessions/main/6dd8cfed-4d24-4c82-960f-b3af96cd43c0.jsonl.reset.2026-06-12T22-45-55.771Z#L221] Assistant: 更新今天的记忆：
+[main/sessions/main/6dd8cfed-4d24-4c82-960f-b3af96cd43c0.jsonl.reset.2026-06-12T22-45-55.771Z#L241] Assistant: 全搞定了。总结一下改了什么： **🐬 海豚命名已落地：** | 文件/组件 | 改动 | |-----------|------| | AGENTS.md | `🧠 gbrain` → `🐬 海豚`，全篇改称 | | TOOLS.md | `🧠 gbrain` → `🐬 海豚`，含架构图 | | systemd 服务 | 描述已改为"海豚 🐬 本地知识库 API 服务" | | memory | 命名记录归档 | | skill | `gbrain-
+[main/sessions/main/6dd8cfed-4d24-4c82-960f-b3af96cd43c0.jsonl.reset.2026-06-12T22-45-55.771Z#L242] User: 海豚的审计希望对他的这个审计时间内的贡献做个briefing和evaluation。对海豚的审计，不要放在tradeoms中，要放在openclaw的工作目录里，而且能被openclaw自己的工作目录的github commit。另，海豚的briefing和evaluation可以跟我交互，获得我的comments以便做到better and better
+[main/sessions/main/6dd8cfed-4d24-4c82-960f-b3af96cd43c0.jsonl.reset.2026-06-12T22-45-55.771Z#L247] Assistant: 现在把 tradeoms-6h-audit 里的海豚部分去掉，各走各的：
+[main/sessions/main/6dd8cfed-4d24-4c82-960f-b3af96cd43c0.jsonl.reset.2026-06-12T22-45-55.771Z#L249] Assistant: 更新记忆并写一份基线审计报告：

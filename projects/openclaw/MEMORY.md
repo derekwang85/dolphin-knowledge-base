@@ -80,3 +80,20 @@
 - 🐕 巡检 10:40: **HEAD**: 2044d0b 🐩 巨贵 审查报告#5 (10:39, 1分钟前) ✅; **Free模型**: `openrouter/free` → gpt-oss-20b ✅ WORKING; **🐶 斗牛**: 无运行中的后端进程 ⚠️; **🧸 泰迪**: CodeBuddy 运行中 (09:37起) — VA前端首单任务 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-11.md:4-7]
 <!-- openclaw-memory-promotion:memory:memory/2026-06-11.md:8:11 -->
 - 🐕 巡检 10:40: **🐩 巨贵**: 刚完成审查报告#5 (448行); **🐺 二哈**: freecode 存在，模型可用 ✅; **🐋 大鱼**: 未见活跃; **🐕 柯基**: 上次提交为i18n修复 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-11.md:8-11]
+
+## Promoted From Short-Term Memory (2026-06-17)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-06-12.md:12:12 -->
+- 三层方案实施: **Layer 2 — Skill (gbrain-query) ✅** [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-12.md:12-12]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-12.md:13:14 -->
+- 三层方案实施: 通过 skill_workshop 创建 `gbrain-query` 技能提案（pending）; 定义自动触发条件、三种调用方式、规则和健康检查 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-12.md:13-14]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-12.md:3:3 -->
+- gbrain 三层集成完成 (2026-06-12 08:59): Derek 要求将 gbrain 静默集成到 OpenClaw，无需每次说"查一下"。 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-12.md:3-3]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-12.md:7:7 -->
+- 三层方案实施: **Layer 1 — AGENTS.md 默认规则 ✅** [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-12.md:7-7]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-12.md:8:10 -->
+- 三层方案实施: 在 AGENTS.md 新增 `🧠 gbrain — 静默副脑` 章节; 定义自动触发范围：TradeOMS 项目、OpenClaw 工作区、历史决策; 调用优先级：HTTP 桥 → CLI → 跳过无关问题 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-12.md:8-10]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-13.md:3:5 -->
+- 02:16 — dogwatch 保活: **reasonix code**: 1 process ✅ 正常; **auto-dispatcher**: 有 53 项待办（Batch 10~21），但均为已分配状态（期待特定 Agent），🟢 无空闲 Agent 可派; **结论**: 保活通过，无操作 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-13.md:3-5]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-12.md:16:16 -->
+- 三层方案实施: **Layer 3 — HTTP 桥 ✅** [score=0.802 recalls=0 avg=0.620 source=memory/2026-06-12.md:16-16]

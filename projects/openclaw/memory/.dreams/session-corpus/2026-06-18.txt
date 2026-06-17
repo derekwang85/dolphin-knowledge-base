@@ -1,0 +1,30 @@
+[main/sessions/main/02ec2580-809c-4a3e-8a87-e3ba2c840791.jsonl#L10] Assistant: WBS 测试通知脚本已执行完成（exit code: 0）。
+[main/sessions/main/051be23d-ffea-462e-bc92-d1e29d005fe7.jsonl#L12] Assistant: 准时推送完毕。今晚无 WBS 完工事件需上报（通知文件不存在，脚本无痕退出），一切正常。
+[main/sessions/main/06a74701-1a49-4137-94f1-9e1771842e07.jsonl#L8] Assistant: 代理看护脚本执行完毕，无异常输出 — 所有守护进程正常运行，无需干预。
+[main/sessions/main/097c47a0-197a-46df-a468-6a13609d2ad6.jsonl#L8] Assistant: 脚本已执行完毕（无 stdout 输出，通常表示通知已通过 Telegram 直接发出）。
+[main/sessions/main/09adf6cc-605b-4999-960b-1c8e07224b38.jsonl#L8] Assistant: WBS测试统计通知脚本已执行完成（无报错输出）。
+[main/sessions/main/0a180aaf-6fbf-4e6e-81e2-15eadff4e19b.jsonl#L10] Assistant: WBS 测试完成通知已成功执行（exit code 0），测试统计信息已推送。
+[main/sessions/main/0c66596b-1707-4e1d-a1d1-7926ab9e1820.jsonl#L10] Assistant: 看门狗巡检完毕 ✅ 所有 5 个 Agent（斗牛、巨贵、仓鼠、猎隼、大鱼）均存活，无需重启。
+[main/sessions/main/10b48268-e7e5-41ae-a03f-46244013b1e7.jsonl#L10] Assistant: 巡检完成 ✅ 全部 5 个 Agent（斗牛、巨贵、仓鼠、猎隼、大鱼）均存活，无需重启。
+[main/sessions/main/1380132f-52f0-4b85-b360-86c458a44147.jsonl#L10] Assistant: Agent watchdog check completed successfully — exit code 0, no anomalies detected. All clear.
+[main/sessions/main/138e0b93-d505-4832-b591-2f0ce9b46104.jsonl#L8] Assistant: WBS 日报通知脚本执行完毕，退出码 0，已发送（含测试统计数据）。
+[main/sessions/main/13907a7b-d79c-4615-a3be-8ee1ec81d76d.jsonl#L10] Assistant: 看门狗巡检完成 ✅ — 所有 5 个 Agent Worker（斗牛、巨贵、仓鼠、猎隼、大鱼）均存活，无需重启。
+[main/sessions/main/13fdf30d-a3eb-41bf-a845-571789f9f1f8.jsonl#L8] Assistant: The watchdog script completed silently — no output, which means no issues detected. All clear.
+[main/sessions/main/13fdf30d-a3eb-41bf-a845-571789f9f1f8.jsonl#L10] Assistant: Agent watchdog 于 01:10 执行完毕 ✅ — 退出码 0，无异常输出。所有 5 个 Agent（斗牛、巨贵、仓鼠、猎隼、大鱼）均正常运行。
+[main/sessions/main/14c22b72-23c6-4d3d-9919-dad36f6bd529.jsonl#L8] Assistant: ✅ 同步完成，无变更，静默退出。
+[main/sessions/main/188b90c4-cda5-47fc-8338-b3d9a0af4acc.jsonl#L10] Assistant: 巡检完成 ✅ — 5个 Agent（斗牛、巨贵、仓鼠、猎隼、大鱼）全部存活，无需重启。
+[main/sessions/main/1a226e66-6144-4457-bc28-56dea32fef72.jsonl#L12] Assistant: WBS 通知脚本已执行完成（exit code 0）。脚本静默运行，通过 Telegram 发送通知（无 stdout 输出），测试统计已包含。
+[main/sessions/main/1b056ed2-6e3b-4756-86b7-d025b440bbc1.jsonl#L10] Assistant: WBS 通知脚本已执行完成（exit code 0），包含测试统计信息已发送。
+[main/sessions/main/1b7f3387-2719-4856-b133-9a9cdea59ceb.jsonl#L8] Assistant: 看门狗脚本已在 `01:20` 准时执行，无异常输出，一切正常。
+[main/sessions/main/1cc91c71-c3d1-48b6-bc21-8310bc75007a.jsonl#L10] Assistant: 巡检完成 ✅ 所有 5 个 Agent 进程（斗牛、巨贵、仓鼠、猎隼、大鱼）均在运行，无需重启。
+[main/sessions/main/1e9b5c7c-86aa-4af4-bb7d-4d1531361843.jsonl#L10] Assistant: WBS Telegram 通知脚本已执行完毕（exit code 0），包含测试统计数据，通知已发送到 Telegram。
+[main/sessions/main/2097b183-bb16-427f-ae34-645274f5a6a2.jsonl#L10] Assistant: 脚本已成功执行（退出码 0），WBS 日报通知（含测试统计）已发送。 需要我接下来做什么吗？
+[main/sessions/main/2125acff-1ddf-4992-bf03-4c5673f031a8.jsonl#L10] Assistant: WBS 测试完成通知脚本已执行成功（exit code 0），测试统计结果已随通知发送到 Telegram。
+[main/sessions/main/26aafce9-e176-448b-ad42-e8d4762589be.jsonl#L10] Assistant: WBS 通知脚本已执行完毕（exit 0），测试统计已包含。
+[main/sessions/main/2a4380d6-c506-41ff-9cbf-40d40b6f4463.jsonl#L10] Assistant: 看门狗巡检完成 ✅ — 5个守护进程（斗牛、巨贵、仓鼠、猎隼、大鱼）全部存活，无需重启。
+[main/sessions/main/2ac9b76e-d630-4551-ab1e-8ec762260452.jsonl#L12] Assistant: 脚本正常执行完毕（exit code 0），但当前没有待推送的 WBS 完工通知，因此静默退出。 **说明：** - 检查了 `/tmp/wbs-done-alerts.jsonl` — 不存在或为空，无新完工记录 - 按设计逻辑：**有通知才发，无通知直接退出**，无输出是预期行为 - 下次 cron 触发（或手动推送）时若有新完工项，会自动推送到 Telegram
+[main/sessions/main/2f57e9cf-8eef-4290-91a9-58d7f42f29cf.jsonl#L8] Assistant: Script executed successfully with no errors. Let me verify its exit status.
+[main/sessions/main/2f57e9cf-8eef-4290-91a9-58d7f42f29cf.jsonl#L10] Assistant: WBS Telegram 通知脚本已执行完成（exit code 0），已携带 test 统计数据发送通知。
+[main/sessions/main/335d09d1-503e-4247-956f-98730563eca2.jsonl#L10] Assistant: 巡检完成 ✅ 所有 5 个 agent 进程（斗牛、巨贵、仓鼠、猎隼、大鱼）均存活，无需重启。
+[main/sessions/main/36d434be-cd2f-48ba-9fe1-dc5de7fc219d.jsonl#L10] Assistant: Agent 活保巡检完成，5 个 Agent（斗牛、巨贵、仓鼠、猎隼、大鱼）均在运行，无需重启。
+[main/sessions/main/3c905b68-fed4-4fa6-a47e-c566dee500a0.jsonl#L10] Assistant: WBS Telegram 通知脚本已执行完成（exit code 0），测试统计已包含在内。

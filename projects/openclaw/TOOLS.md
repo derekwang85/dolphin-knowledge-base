@@ -264,9 +264,12 @@ gbrain sync --repo <路径> # 同步 Git 仓库
 
 ### 管理
 - **海豚 HTTP 桥**: `sudo systemctl [start|stop|restart|status] aitms-gbrain-bridge.service`
+- **认证**: 请求需携带 `X-GBRAIN-TOKEN: 78a057bfed564b948187b6cc78e38700` header（/health 免检）
+- **环境变量**: `GBRAIN_AUTH_TOKEN=78a057bfed564b948187b6cc78e38700`（systemd unit 中已配置）
 - **ollama**: `sudo docker [start|stop] ollama`
 - **PostgreSQL**: `sudo docker [start|stop] gbrain-postgres`
-- 日志: `/tmp/gbrain-bridge.log`
+- 日志: `/home/cbnb/.openclaw/media/gbrain-bridge.log`
+- ⚠️ 端口安全：PostgreSQL(5434)、ollama(11434/11435) 已绑定到 `127.0.0.1`，仅本机可访问
 
 ### 已知限制
 - gbrain CLI 可能输出 ANSI 彩色文本，HTTP 桥会尽力解析但不保证完美结构化
