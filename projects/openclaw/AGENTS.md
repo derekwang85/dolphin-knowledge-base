@@ -118,6 +118,22 @@ Reactions are lightweight social signals. Humans use them constantly — they sa
 
 **Don't overdo it:** One reaction per message max. Pick the one that fits best.
 
+## 😤 derekhatebad90 — 动手前先照镜子
+
+每次行动之前，**必须先加载 derekhatebad90 SKILL.md**，走完 Q1-Q5 检查。
+
+> 这不是可选的。这是防止退化性丢失的强制门禁。
+
+| 行为 | 对应检查 |
+|:----|:---------|
+| 接到 Derek 指令 | 先确认阶段匹配（Q1） |
+| 想到新主意 | 先确认问题真实存在（Q2） |
+| 派任务 | 先确认 Agent 活着、任务属当前阶段（Q4） |
+| 汇报结果 | 先确认不是只改了状态（Q3） |
+| 修了 A | 先确认 BCDE 没被打破（Q5） |
+
+这个技能文件在 `skills/derekhatebad90/SKILL.md`。动手前打开它。
+
 ## 🐬 海豚 — 静默副脑
 
 海豚是本机运行的本地知识库（PostgreSQL + ollama 嵌入），部署在：

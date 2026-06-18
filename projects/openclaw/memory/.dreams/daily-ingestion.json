@@ -1,50 +1,50 @@
 {
   "version": 1,
   "files": {
+    "memory/2026-06-19.md": {
+      "mtimeMs": 1781801160839,
+      "size": 295,
+      "lastDreamingDayIngested": "2026-06-19"
+    },
+    "memory/2026-06-18.md": {
+      "mtimeMs": 1781798001653,
+      "size": 6479,
+      "lastDreamingDayIngested": "2026-06-19"
+    },
     "memory/2026-06-17.md": {
       "mtimeMs": 1781689297691,
       "size": 2775,
-      "lastDreamingDayIngested": "2026-06-18"
+      "lastDreamingDayIngested": "2026-06-19"
     },
     "memory/2026-06-16.md": {
       "mtimeMs": 1781602161560,
       "size": 8240,
-      "lastDreamingDayIngested": "2026-06-18"
+      "lastDreamingDayIngested": "2026-06-19"
     },
     "memory/2026-06-15.md": {
       "mtimeMs": 1781530470362,
       "size": 5350,
-      "lastDreamingDayIngested": "2026-06-18"
+      "lastDreamingDayIngested": "2026-06-19"
     },
     "memory/2026-06-14.md": {
       "mtimeMs": 1781454897612,
       "size": 17130,
-      "lastDreamingDayIngested": "2026-06-18"
+      "lastDreamingDayIngested": "2026-06-19"
     },
     "memory/2026-06-13.md": {
       "mtimeMs": 1781288179317,
       "size": 249,
-      "lastDreamingDayIngested": "2026-06-18"
+      "lastDreamingDayIngested": "2026-06-19"
     },
     "memory/2026-06-12.md": {
       "mtimeMs": 1781275458347,
       "size": 6502,
-      "lastDreamingDayIngested": "2026-06-18"
+      "lastDreamingDayIngested": "2026-06-19"
     },
     "memory/2026-06-11.md": {
       "mtimeMs": 1781162595829,
       "size": 3272,
-      "lastDreamingDayIngested": "2026-06-18"
-    },
-    "memory/2026-06-10.md": {
-      "mtimeMs": 1781104815846,
-      "size": 2152,
-      "lastDreamingDayIngested": "2026-06-18"
-    },
-    "memory/2026-06-10-tradeoms-summary.md": {
-      "mtimeMs": 1781105563076,
-      "size": 5426,
-      "lastDreamingDayIngested": "2026-06-18"
+      "lastDreamingDayIngested": "2026-06-19"
     }
   }
 }

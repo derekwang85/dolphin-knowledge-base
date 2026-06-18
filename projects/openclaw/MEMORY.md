@@ -1,23 +1,6 @@
 # Long-Term Memory
 
 
-## Promoted From Short-Term Memory (2026-06-13)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-06-09.md:12:15 -->
-- 产出: `04-adr/ADR-005-i18n.md` — i18n 架构决策; `10-i18n/` — 策略 + 6 道门禁 + 术语表 + CI 检查脚本; `11-product-manual/` — 产品手册框架（buyer/operations/openclaw 三端共 32 个功能骨架）; `06-runbook/` 3 个文件 — 补充 i18n 部署/运维/环境检查 [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-09.md:12-15]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-09.md:16:18 -->
-- 产出: `09-migrations/phase-plan.md` — 各 Phase 标注 i18n + 手册交付节点; `12-development-guide/` — 开发规约全套（工作流、PR checklist、合规速查）; `12-development-guide/spec-ripple-analysis.md` — 元方法论：规约涟漪分析 [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-09.md:16-18]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-09.md:23:26 -->
-- 做得好的 ✅: 任务理解准确，从 ADR 决策到落地执行全链路覆盖; 不满足于「加个 ADR + 两个文件」，而是系统地构建了一整层规约体系; quick check 矩阵的设计让未来新增规约时有章可循; 与现有 Phase 5 自然衔接形成闭环 [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-09.md:23-26]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-09.md:29:32 -->
-- 小瑕疵 ⚠️: **第一轮遗漏 runbook/phase-plan 的联动更新** — Derek 指出后才补上; root cause：只看到了「i18n 门禁 = 开发阶段的事」，没意识到「新规约的引入会涟漪扩散到部署/运维/规划文档」; fix：直接沉淀为 spec-ripple-analysis.md 元方法论，纳入 #0 核心规约; **README 中漏了 ADR-005 的目录入口标记** — Derek 没提但我自检发现 [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-09.md:29-32]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-09.md:33:33 -->
-- 小瑕疵 ⚠️: 没有在一开始就创建 `12-development-guide/`，而是补 runbook 时才意识到需要把门禁时序串起来 [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-09.md:33-33]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-09.md:6:6 -->
-- 任务: Derek 要求完善 derekcoding，增加： [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-09.md:6-6]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-09.md:7:9 -->
-- 任务: i18n 语言需求规划和相关门禁（含 ADR）; 产品手册（逐字段、逐功能开发）; 对应规约文件放到 OMS 合适文件夹 [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-09.md:7-9]
-
 ## 2026-06-14 — 金毛(Cline)改造+战略评估
 
 ### 金毛改造完成
@@ -97,3 +80,18 @@
 - 02:16 — dogwatch 保活: **reasonix code**: 1 process ✅ 正常; **auto-dispatcher**: 有 53 项待办（Batch 10~21），但均为已分配状态（期待特定 Agent），🟢 无空闲 Agent 可派; **结论**: 保活通过，无操作 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-13.md:3-5]
 <!-- openclaw-memory-promotion:memory:memory/2026-06-12.md:16:16 -->
 - 三层方案实施: **Layer 3 — HTTP 桥 ✅** [score=0.802 recalls=0 avg=0.620 source=memory/2026-06-12.md:16-16]
+
+## Promoted From Short-Term Memory (2026-06-19)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-06-14.md:10:10 -->
+- 11:13~11:22 — 队列修复 + Batch17 启动: ...（前面内容见下文） [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-14.md:10-10]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-14.md:15:15 -->
+- 背景: Derek 发现项目存在多套WBS任务文件各自为政，要求全线审查。 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-14.md:15-15]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-14.md:18:18 -->
+- 勘察结果: **5套任务权威文件冲突:** [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-14.md:18-18]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-14.md:19:22 -->
+- 勘察结果: ✅ `project-wbs-full.md` — 主WBS表848项（主真理源）; ❌ `BATCH_PLAN.md` — Batch 17 描述与WBS表冲突（BATCH_PLAN说=测试，WBS说=Shipping）; ❌ `dispatch-active.md` — 过期（只列R.8~R.15，未更新V系列）; ❌ `active-task-*.md` 4个 — 最后更新6月12日，内容老旧 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-14.md:19-22]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-14.md:7:7 -->
+- 昨夜至今状态（2026-06-13 深夜 → 06-14 凌晨）: ...（前面内容见下文） [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-14.md:7-7]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-14.md:4:4 -->
+- 08:15 — 完工报告请求: Derek 在 Telegram 上要"完工报告"。 [score=0.802 recalls=0 avg=0.620 source=memory/2026-06-14.md:4-4]
