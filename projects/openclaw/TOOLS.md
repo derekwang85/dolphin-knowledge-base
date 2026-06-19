@@ -214,67 +214,54 @@ python3 -c "tok=''.join(chr(c) for c in [67,98,110,98,50,48,50,54]); ..."
 - 命令中 token 值显示为 `***` 或 `…` 缩写
 - 碰巧成功时，往往是 token 被部分打码后恰巧匹配了别的有效值
 
-## 🐬 海豚 — 本地知识库副脑
+## 🧠 derekinside — 本地知识库副脑
 
-### 架构
-```
-PostgreSQL + pgvector (port 5434)
-  ↓ 嵌入
-ollama + bge-m3 (port 11434) — 本地纯 CPU, 1024维
-  ↓ HTTP API
-海豚 HTTP 桥 (Python, port 18890) — OpenClaw 调用入口
-```
+取代了之前的 gbrain/海豚。内建 PostgreSQL + 嵌入引擎。
 
-### 核心组件
-| 组件 | 状态 | 位置/端口 |
-|------|------|----------|
-| PostgreSQL 16 + pgvector | ✅ Docker | port 5434, 库 gbrain |
-| ollama + bge-m3 | ✅ Docker | port 11434 |
-| gbrain CLI | ✅ ~/.local/bin/gbrain | 257MB binary |
-| 海豚 HTTP 桥 | ✅ systemd | port 18890 |
-
-### HTTP 桥 API
+### HTTP API
 ```bash
 # 健康检查
 curl -s http://localhost:18890/health
 
-# 语义查询（混合搜索）
-curl -s http://localhost:18890/api/query -d '{"q":"问题"}'
-curl -s "http://localhost:18890/api/query?q=问题"
+# 语义搜索
+curl -s -X POST http://localhost:18890/api/v1/search \
+  -H "Content-Type: application/json" \
+  -d '{"query":"问题","top_k":5}'
 
-# 关键词搜索
-curl -s "http://localhost:18890/api/search?q=关键词"
+# 状态（wings/rooms/pages/chunks）
+curl -s http://localhost:18890/api/v1/status
+
+# 列出 wings
+curl -s http://localhost:18890/api/v1/wings
 ```
 
-### CLI 直调
+### CLI
 ```bash
-export DATABASE_URL="postgres://postgres:postgres@localhost:5434/gbrain"
-gbrain query "问题"     # 混合搜索
-gbrain search "关键词"   # 关键词搜索
-gbrain import <dir>     # 导入知识
-gbrain sync --repo <路径> # 同步 Git 仓库
+derekinside search "问题"                # 语义搜索
+derekinside search --json "问题"          # JSON 输出
+derekinside search --wing openclaw "问题" # 限定 wing
+derekinside status                        # 系统状态
+derekinside wings                         # 列出 wings
+derekinside rooms                         # 列出 rooms
+derekinside mine <路径>                   # 导入知识
+derekinside serve --mode http --port 18890 # 启动 HTTP 服务
 ```
 
-### 知识库内容
-| 数据源 | 文件数 | Chunks |
-|--------|--------|--------|
-| TradeOMS 源码+文档 | 251 | 1058 |
-| OpenClaw 工作区核心文件 | 14 | 36 |
-| **合计** | **265** | **1094** |
+注意：CLI 需要 `DEREPATH` 环境变量或在 project root 下运行。
+
+### 当前状态
+- **wings**: 14 | **rooms**: 45 | **pages**: 555 | **chunks**: 2,651
+- **graph entities**: 687 | **links**: 1,427
 
 ### 管理
-- **海豚 HTTP 桥**: `sudo systemctl [start|stop|restart|status] aitms-gbrain-bridge.service`
-- **认证**: 请求需携带 `X-GBRAIN-TOKEN: 78a057bfed564b948187b6cc78e38700` header（/health 免检）
-- **环境变量**: `GBRAIN_AUTH_TOKEN=78a057bfed564b948187b6cc78e38700`（systemd unit 中已配置）
-- **ollama**: `sudo docker [start|stop] ollama`
-- **PostgreSQL**: `sudo docker [start|stop] gbrain-postgres`
-- 日志: `/home/cbnb/.openclaw/media/gbrain-bridge.log`
-- ⚠️ 端口安全：PostgreSQL(5434)、ollama(11434/11435) 已绑定到 `127.0.0.1`，仅本机可访问
+- **进程**: `/home/cbnb/.local/bin/derekinside serve --mode http --host 0.0.0.0 --port 18890`
+- **源码**: `/home/cbnb/derekinside/`
+- **CLI 路径**: `~/.local/bin/derekinside`
 
-### 已知限制
-- gbrain CLI 可能输出 ANSI 彩色文本，HTTP 桥会尽力解析但不保证完美结构化
-- bge-m3 的 context_length 为 8192 tokens，超过自动截断
-- 目前嵌入了 265 个页面，搜索覆盖 TradeOMS + OpenClaw 工作区
+### 知识库Git仓库（旧海豚遗留）
+- **路径**: `~/gbrain-brain/`
+- **GitHub**: `git@github.com:derekwang85/dolphin-knowledge-base.git`
+- **注意**: 旧 gbrain 的同步仓库，derekinside 是否继承待确认
 
 ## TradeOMS Dev 环境
 
@@ -288,11 +275,3 @@ gbrain sync --repo <路径> # 同步 Git 仓库
 ## Related
 
 - [Agent workspace](/concepts/agent-workspace)
-
-### 知识库Git仓库
-- **路径**: `~/gbrain-brain/`
-- **GitHub**: `git@github.com:derekwang85/dolphin-knowledge-base.git`（需Derek创建空仓库）
-- **自动同步**: cron `海豚-sync` 每天凌晨3:00
-- **手动同步**: `bash ~/.openclaw/workspace/scripts/dolphin-sync.sh`
-- **内容**: OpenClaw工作区核心文件 + 记忆 + 技能 + 经验沉淀 + 审计报告
-- **注意**: TradeOMS源码不走此仓库，由 `gbrain sync --repo` 管理

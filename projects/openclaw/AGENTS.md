@@ -134,28 +134,33 @@ Reactions are lightweight social signals. Humans use them constantly — they sa
 
 这个技能文件在 `skills/derekhatebad90/SKILL.md`。动手前打开它。
 
-## 🐬 海豚 — 静默副脑
+## 🧠 derekinside — 静默副脑
 
-海豚是本机运行的本地知识库（PostgreSQL + ollama 嵌入），部署在：
-- **数据库**: `postgres://postgres:postgres@localhost:5434/gbrain`
-- **CLI**: `~/.local/bin/gbrain`（需 `export DATABASE_URL=...`）
-- **HTTP 桥**: `http://localhost:18890/api/query`
+derekinside 是本机运行的本地知识库，取代了之前的 gbrain/海豚。
+部署在：
+- **HTTP 桥**: `http://localhost:18890/api/v1/search`
+- **CLI**: `derekinside search <问题>`（需在 DEREPATH 目录下运行）
+- **状态**: 14 wings, 555 pages, 2,651 chunks, 687 entities
 
 **自动触发规则**（无需显式要求）：
-- 几乎**所有交互**都应该先过海豚，包括：
-  - 回答关于 **TradeOMS 项目**的问题（代码、架构、需求、数据库、API、WBS、Bug 等）
-  - 处理关于 **OpenClaw 工作区**的查询（AGENTS.md、SOUL.md、历史记忆、技能等）
+- 几乎**所有交互**都应该先过 derekinside，包括：
+  - 回答关于 **TradeOMS 项目**的问题
+  - 处理关于 **OpenClaw 工作区**的查询
   - 回忆 **历史决策、被纠正过的错误、Derek 的偏好**
   - 做 **Agent 管理决策**（派活、分任务、评估反馈、故障排查）
-  - **自己产出输出前**——检查是否和历史知识一致、有没有踩过同样的坑
-  - 写 **skill、文档、规约** 之前——查海豚里有没有类似模式可以复用
-- 唯一跳过的情况：**闲聊、日常问候、时间日期查询**——这些海豚帮不上忙
-- 一句话：**先查海豚，再思考，再输出**
+  - **自己产出输出前**——检查是否和历史知识一致
+  - 写 **skill、文档、规约** 之前
+- 唯一跳过的情况：**闲聊、日常问候、时间日期查询**
+- 一句话：**先查 derekinside，再思考，再输出**
 
 **调用方式（优先级）**:
-1. HTTP 桥（最快，无 CLI 开销）：`curl -s http://localhost:18890/api/query -d '{"q":"用户问题"}'`
-2. CLI（备用）：`gbrain query <问题>` 或 `gbrain search <关键词>`
-3. 如果 HTTP 桥无响应，自动降级到 CLI
+1. HTTP POST（最快，无 CLI 开销）：
+   ```bash
+   curl -s -X POST http://localhost:18890/api/v1/search \
+     -H "Content-Type: application/json" \
+     -d '{"query":"问题","top_k":5}'
+   ```
+2. CLI（备用，需 DEREPATH 环境变量）：`derekinside search "问题"`
 
 **不做**：不要为了查而查——如果问题跟已知知识无关（闲聊、日常），跳过。
 

@@ -22,29 +22,6 @@
 4. 密切观察 Cline 效果再做评估
 5. 未来可能架构：Reasonix(批量) + Cline(深度) 双轨协作
 
-## Promoted From Short-Term Memory (2026-06-15)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-06-10-tradeoms-summary.md:18:21 -->
-- 上午 (09:00~12:00): 团队ABCD岗制度确立; OE_V1 52张Figma截图全分析 → 发现CDP缺失业务域; Document Management模块设计+PRD; 系统全景架构图 system-map-complete.md [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-10-tradeoms-summary.md:18-21]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-10-tradeoms-summary.md:24:27 -->
-- 下午 (14:00~18:00): **大鱼** → KYC前端组件填充 → CDP前端精修 → Document前端; **斗牛** → Document后端 → Quote后端全部8API+状态机+限价规则; **巨贵** → Document前端框架(UI还原) → 代码审查; WBS补充: 横切关注点C/A/B(C.1~C.12) + D文档专项 + E API契约 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-10-tradeoms-summary.md:24-27]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-10-tradeoms-summary.md:30:33 -->
-- 晚上 (19:00~23:45): **大鱼** → Order前端1,466行 → VA前端1,219行 → TT前端 → LC前端1,532行 → 6个联调脚本; **斗牛** → Order后端1,069行 → VA后端431行 → TT后端853行 → LC后端1,050行 → JWT安全底座; **柯基** 🆕 → aider安装+MiniMax M2.7配置 → 纳入团队建制; **巨贵** → 代码审查报告+编译检查脚本 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-10-tradeoms-summary.md:30-33]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-10-tradeoms-summary.md:34:36 -->
-- 晚上 (19:00~23:45): **二哈** → 改名+明早08:00 cron; 全员昵称体系建立 (边牧/大鱼/斗牛/巨贵/柯基/二哈); WBS F-K-U 全量扩充 (UAT/UX/平台/运维/安全/集成/UI精修) [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-10-tradeoms-summary.md:34-36]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-10-tradeoms-summary.md:5:8 -->
-- 📊 核心数据: | 指标 | 数值 | |------|:----:| | Commits | 26 | | 代码新增 | 30,133 lines | [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-10-tradeoms-summary.md:5-8]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-10-tradeoms-summary.md:9:11 -->
-- 📊 核心数据: | 文件变更 | 386 files | | WBS任务数 | 243 → 600+ | | Agent工时 | 6 名成员全时段 | [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-10-tradeoms-summary.md:9-11]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-10.md:12:15 -->
-- 整体产出（跨双通道）: | §3 CDP | 全量实现 | 10 组件 | ✅ | | §4 Document | 全量实现 | 6 组件 | ✅ | | §5 Quote | 全量 + 限价规则引擎 | 精修中 | ✅ | | §6 Order | 全量 (Reasonix) | 已完成 | ✅ | [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-10.md:12-15]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-10.md:16:19 -->
-- 整体产出（跨双通道）: | §7 VA | 全量实现 | 全量 (大鱼) | ✅ | | §8 TT | 全量实现 | 前端完成 | ✅ | | §9 LC | 全量实现 | 前端+后端全部完成 | ✅ | | §10 OE | — | — | 🔲 | [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-10.md:16-19]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-10.md:20:21 -->
-- 整体产出（跨双通道）: | §11 Buyer | JWT+RBAC 安全底座 | — | ⏳ | | §12 集成测试 | 12项联调测试 | — | ⏳ | [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-10.md:20-21]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-10.md:25:28 -->
-- 本通道关键交付: **架构治理**: 单一事实源 6 个软链接、derekcoding 原则 9 条落地; **DDL 修正**: 新增 `oms_role` / `oms_audit_log` / `oms_business_event`，总 68 表; **质量门禁**: G1-G11 + D1-D12 延迟触发器; **配置兜底**: MinioService @Value 修复 + pre-submit 门禁 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-10.md:25-28]
-
 ## Promoted From Short-Term Memory (2026-06-16)
 
 <!-- openclaw-memory-promotion:memory:memory/2026-06-10.md:6:6 -->
@@ -95,3 +72,18 @@
 - 昨夜至今状态（2026-06-13 深夜 → 06-14 凌晨）: ...（前面内容见下文） [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-14.md:7-7]
 <!-- openclaw-memory-promotion:memory:memory/2026-06-14.md:4:4 -->
 - 08:15 — 完工报告请求: Derek 在 Telegram 上要"完工报告"。 [score=0.802 recalls=0 avg=0.620 source=memory/2026-06-14.md:4-4]
+
+## Promoted From Short-Term Memory (2026-06-20)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-06-15.md:13:14 -->
+- 2681c611 wbs-mark-done.sh — 状态列索引6→7修复 ⭐8/10: 定位准确,修复Bug效果立竿见影(Markdown表col[7]是状态); 建议: 添加注释解释表结构 [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-15.md:13-14]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-15.md:17:19 -->
+- de1701ac cron-master.py — 后台任务总管 ⭐9/10: 纯Python自循环替代4个cron,架构优美; 30秒自检+时间驱动,功耗低; 完整的PID/LOG管理 [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-15.md:17-19]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-15.md:22:24 -->
+- be05049f wbs-telegram-notify.py — Telegram直推 ⭐7/10 ⚠️: 功能完整,报告格式清晰; **🚨 bad-90嫌疑: BOT_TOKEN硬编码** → 应移至环境变量; 无通知静默退出设计好 [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-15.md:22-24]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-15.md:27:28 -->
+- a4b7843e wbs-completion-report.py — WBS报告聚合 ⭐9/10: 架构清晰,git log聚合+Agent分工统计; stdin管道设计符合UNIX哲学 [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-15.md:27-28]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-15.md:31:32 -->
+- 9ec821d8 wbs-mark-done.sh — 精确逐行解析 ⭐9/10: regex→精确解析,规避Bad-90重复空跑; JSONL日志+管道通信设计合理 [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-15.md:31-32]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-15.md:5:8 -->
+- Git统计 (最近20个commit): **含代码的commit**: 18个 (.py/.sh/.json); **纯文档commit**: 2个 (lessons/ 下的.md文件); **bad-90嫌疑(corgi-dogwatch/BATCH_PLAN)**: 0个 ✅; 该目录不存在于工作区 [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-15.md:5-8]
