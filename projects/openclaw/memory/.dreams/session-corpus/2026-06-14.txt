@@ -446,3 +446,15 @@
 [main/sessions/main/4e5872a3-1aca-4c58-97f2-53813d9d8a93.jsonl.reset.2026-06-14T23-07-34.182Z#L428] Assistant: 你说得对，这歧义太大了。我查清楚了：
 [main/sessions/main/4e5872a3-1aca-4c58-97f2-53813d9d8a93.jsonl.reset.2026-06-14T23-07-34.182Z#L430] Assistant: 真相：**巡检是在正常跑的**，daemon 运行 1h8min 一直在线，14:17 刚产出了一份新报告： ``` i18n: MISMATCH | CI: OK | 硬编码: ISSUE ``` 告警标记也有。但 cron 读到报告时的提示词太简陋了，没交代清楚"文件不存在"到底是"巡检没开始"还是"巡检进行中没有问题"。 我来改掉这个歧义：
 [main/sessions/main/4e5872a3-1aca-4c58-97f2-53813d9d8a93.jsonl.reset.2026-06-14T23-07-34.182Z#L432] Assistant: 已修复。下次推送会是这样的： ``` 🐕 柯基巡检 14:17 门禁: i18n=MISMATCH | CI=OK | 硬编码=ISSUE 告警: 有 🚨 仓鼠: 已修复3项(ci/i18n/硬编码) 状态: 报告有告警，仓鼠正在跟修 ``` 而不是之前那句让人心里发慌的"文件不存在，无告警"。 **这次教训的根因：** - 巡检 daemon 一直在正常跑，报告也写了——但 cron 的提示词只说了"读文件"，没交代清楚**三种可能性**（没开始/没问题/
+[main/sessions/main/4e5872a3-1aca-4c58-97f2-53813d9d8a93.jsonl.reset.2026-06-14T23-07-34.182Z#L433] User: 大家工作情况如何？
+[main/sessions/main/4e5872a3-1aca-4c58-97f2-53813d9d8a93.jsonl.reset.2026-06-14T23-07-34.182Z#L438] Assistant: 全面情况来了： --- ## 📊 当前作战态势 (14:46) ### 猛犬队列 | Agent | 队列 | 轮次 | 状态 | 当前在做什么 | |-------|------|------|------|-------------| | 🐶 **斗牛** | 2 | 319 | 🔵 running | 3.3.4 CDP后端 → 4.1.15 Doc | | 🐋 **大鱼** | 2 | 394 | 🔵 running | 4.1.16 Doc后
+[main/sessions/main/4e5872a3-1aca-4c58-97f2-53813d9d8a93.jsonl.reset.2026-06-14T23-07-34.182Z#L438] Assistant: 差异和硬编码残留。要派吗？
+[main/sessions/main/4e5872a3-1aca-4c58-97f2-53813d9d8a93.jsonl.reset.2026-06-14T23-07-34.182Z#L439] User: 派给金毛吧，记得给金毛要有提示词，提示词要不断改善，比如在原有基础上，把一些修改的例子和相关涟漪分析为给他等。金毛再空闲就再给他派新任务，但是不同的是，给金毛的任务要在海豚的帮助下不断完善提示词。
+[main/sessions/main/4e5872a3-1aca-4c58-97f2-53813d9d8a93.jsonl.reset.2026-06-14T23-07-34.182Z#L440] Assistant: 先查海豚，收集最佳示例和上下文，然后打造一个更丰满的提示词。
+[main/sessions/main/4e5872a3-1aca-4c58-97f2-53813d9d8a93.jsonl.reset.2026-06-14T23-07-34.182Z#L450] Assistant: 现在数据齐全了，构建议个大大改善的提示词：
+[main/sessions/main/4e5872a3-1aca-4c58-97f2-53813d9d8a93.jsonl.reset.2026-06-14T23-07-34.182Z#L452] Assistant: Now I'll assign the task with the much-improved prompt through 金毛's queue:
+[main/sessions/main/4e5872a3-1aca-4c58-97f2-53813d9d8a93.jsonl.reset.2026-06-14T23-07-34.182Z#L456] Assistant: 金毛已抓起任务，Cline 正在跑（CPU 50%）。来看这次提示词的质变： --- ## 🦮 金毛已派单 — 提示词大升级 ### 之前（第一版） ``` 修复硬编码中文: 扫描 sgs/ 和 widgets/ 目录中的 .vue 文件 步骤: 1) 逐文件检查 2) 提取中文 3) 添加key 4) 替换 5) commit ``` → 结果：Cline 扫描一遍说"全覆盖无残留"，**实际上啥也没改** ❌ ### 本次（第二版）— 1713字符，三大块
+[main/sessions/main/4e5872a3-1aca-4c58-97f2-53813d9d8a93.jsonl.reset.2026-06-14T23-07-34.182Z#L457] Assistant: 🐕 柯基巡检 14:55 报告文件 `tasks/corgi-dogwatch-report.md` 尚未生成（daemon 启动后约15分钟出第一份），下次再看。
+[main/sessions/main/4e5872a3-1aca-4c58-97f2-53813d9d8a93.jsonl.reset.2026-06-14T23-07-34.182Z#L458] User: 我感觉柯基这个表现有点儿问题，你详细排查一下
+[main/sessions/main/4e5872a3-1aca-4c58-97f2-53813d9d8a93.jsonl.reset.2026-06-14T23-07-34.182Z#L465] Assistant: 两个方案都上吧，双向锁定：
+[main/sessions/main/4e5872a3-1aca-4c58-97f2-53813d9d8a93.jsonl.reset.2026-06-14T23-07-34.182Z#L477] Assistant: 排查清楚了，两个问题都锁死了： --- ## 🕵️ 排查结论 **柯基daemon一直在正常运行**，报告文件也生成了（14:56刚出一份）。问题出在**两个漏洞叠加**： ### 漏洞1: 写入竞态 🟡 daemon写报告用 `>` 重定向，**先truncate文件再写入内容**。如果cron恰好在truncate后、写入前检查 → 读到空文件 → 模型以为文件不存在。 → **修复**: 改用 `> /tmp/corgi-report.tmp && m

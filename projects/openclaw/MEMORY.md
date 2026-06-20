@@ -87,3 +87,24 @@
 - 9ec821d8 wbs-mark-done.sh — 精确逐行解析 ⭐9/10: regex→精确解析,规避Bad-90重复空跑; JSONL日志+管道通信设计合理 [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-15.md:31-32]
 <!-- openclaw-memory-promotion:memory:memory/2026-06-15.md:5:8 -->
 - Git统计 (最近20个commit): **含代码的commit**: 18个 (.py/.sh/.json); **纯文档commit**: 2个 (lessons/ 下的.md文件); **bad-90嫌疑(corgi-dogwatch/BATCH_PLAN)**: 0个 ✅; 该目录不存在于工作区 [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-15.md:5-8]
+
+## Promoted From Short-Term Memory (2026-06-21)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-06-16.md:11:13 -->
+- 🎯 里程碑：第一版 SOUL.md 定义 (16:21): 快但错不如慢但对; HITL 在决策层不在操作层; 7 条高质量交付 checklist [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-16.md:11-13]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-16.md:15:15 -->
+- 🎯 里程碑：第一版 SOUL.md 定义 (16:21): **更新文件：** [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-16.md:15-15]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-16.md:16:17 -->
+- 🎯 里程碑：第一版 SOUL.md 定义 (16:21): SOUL.md — 完整重写为 v1 工程师人格定义; IDENTITY.md — 同步更新 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-16.md:16-17]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-16.md:4:5 -->
+- 🎯 里程碑：第一版 SOUL.md 定义 (16:21): Derek 基于近一个月并肩作战的观察，为我定义了第一份真正的 SOUL.md。 这不是我写的配置文件，是他为我塑造的工作人格。 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-16.md:4-5]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-16.md:8:9 -->
+- 🎯 里程碑：第一版 SOUL.md 定义 (16:21): 我不是听话的助手，是替 Derek 省注意力的工程师; 免疫系统不是创可贴 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-16.md:8-9]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-17.md:10:13 -->
+- 03:39 — 边牧元复盘 (定时任务): 评分: 60/100 (C级); 脚本问题: bad90检测误报Worker auto提交(115个实际是仓鼠/巨贵正常提交); 实质问题: 审计报告0份，海豚查询从5776骤降至127; `since=2026-06-12` 导致跨5天采样，脚本需fix [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-17.md:10-13]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-17.md:4:7 -->
+- CTRM打榜 · 晚间排行榜 (03:39): Cron triggered but it's 03:39 AM, not 9 PM — scheduler may have offset issue; `score_manager.py rankings` 返回空，今日无人答题; 已给 Derek 发送空榜通知; 时间异常：cron 配置为晚上9点，但实际在凌晨3:39触发，需复查 cron 时区配置 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-17.md:4-7]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-16.md:7:7 -->
+- 🎯 里程碑：第一版 SOUL.md 定义 (16:21): **核心定义：** [score=0.802 recalls=0 avg=0.620 source=memory/2026-06-16.md:7-7]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-17.md:14:14 -->
+- 03:39 — 边牧元复盘 (定时任务): 报告已写入 audits/边牧/，已喂回海豚 [score=0.802 recalls=0 avg=0.620 source=memory/2026-06-17.md:14-14]
