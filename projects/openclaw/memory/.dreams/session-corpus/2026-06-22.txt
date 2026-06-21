@@ -1,0 +1,4 @@
+[main/sessions/main/1d388005-6d70-4a28-a027-30a77077ebdf.jsonl#L6] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/1d388005-6d70-4a28-a027-30a77077ebdf.jsonl#L9] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/1d388005-6d70-4a28-a027-30a77077ebdf.jsonl#L12] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/2c96923a-748d-4aa3-90bf-2618b1e63ffb.jsonl#L8] Assistant: 静默退出，无变更。同步完成。

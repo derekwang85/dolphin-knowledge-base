@@ -134,6 +134,15 @@ Reactions are lightweight social signals. Humans use them constantly — they sa
 
 这个技能文件在 `skills/derekhatebad90/SKILL.md`。动手前打开它。
 
+## ⚖️ 项目宪章
+
+开工前加载 `~/TradeOMS/CONSTITUTION.md`—— 项目级统一规约，所有 Agent 的开工起点。
+包含：Agent 生态 / 开发工作流 / Spec 格式 / 质量标准 / 认知纪律。
+
+复杂任务先写 `.spec.md` 给 Derek 确认再开干，用 `~/TradeOMS/scripts/specify.py` 生成。
+
+---
+
 ## 🧠 derekinside — 静默副脑
 
 derekinside 是本机运行的本地知识库，取代了之前的 gbrain/海豚。
