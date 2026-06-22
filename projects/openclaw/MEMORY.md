@@ -22,25 +22,6 @@
 4. 密切观察 Cline 效果再做评估
 5. 未来可能架构：Reasonix(批量) + Cline(深度) 双轨协作
 
-## Promoted From Short-Term Memory (2026-06-16)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-06-10.md:6:6 -->
-- 整体产出（跨双通道）: **30,133 行代码变更，386 个文件**，7 个 Agent 参与。 [score=0.834 recalls=0 avg=0.620 source=memory/2026-06-10.md:6-6]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-10.md:8:11 -->
-- 整体产出（跨双通道）: | 模块 | 后端 | 前端 | 状态 | |------|------|------|------| | §1 项目基础 | 规约体系 80 文档 | — | ✅ | | §2 KYC | 全量 API (7端点) 编译通过 | Vue 组件就绪 | ✅ | [score=0.834 recalls=0 avg=0.620 source=memory/2026-06-10.md:8-11]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-11.md:14:17 -->
-- 🐕 巡检 11:20: **HEAD (workspace)**: ea6158c 扩展工程规范 ✅; **HEAD (TradeOMS)**: 2f00fe2 🐩 巨贵 产品手册完整性审计 Batch 4 ✅; **Free模型**: `openrouter/free` ✅ (已验证可用); **🐶 斗牛**: Java TradeOMS 进程运行中 (自10:54) ✅ — 之前10:40的🔴已解除 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-11.md:14-17]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-11.md:18:21 -->
-- 🐕 巡检 11:20: **🧸 泰迪**: CodeBuddy 运行 1h43min — 仍在处理VA前端首单任务 ⏳; **🐋 大鱼**: 今日有产出 (i18n, 审计日志AOP, login修复) ✅; **🐩 巨贵**: 活跃 — Batch8/9审查 + 产品手册完整性审计 Batch4 ✅; **🐺 二哈**: freecode 模型可用 (openrouter/free) ✅ [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-11.md:18-21]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-11.md:22:23 -->
-- 🐕 巡检 11:20: **🐕 柯基**: 上次提交 i18n修复 (昨夜) — 暂无新任务; **🟢 整体**: 无红灯，全员正常运作 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-11.md:22-23]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-11.md:26:28 -->
-- 🐕 巡检 13:04 — 夜巡派活: **HEAD (workspace)**: 4c7ad71 docs: ops-manual 二哈模型红线规则 ✅; **HEAD (TradeOMS)**: ed72cc5 Figma截图对照表+缺口分析 ✅; **CPU**: 3个reasonix所有 0.0% >1h → 🟢 空闲，立刻派活 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-11.md:26-28]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-11.md:4:7 -->
-- 🐕 巡检 10:40: **HEAD**: 2044d0b 🐩 巨贵 审查报告#5 (10:39, 1分钟前) ✅; **Free模型**: `openrouter/free` → gpt-oss-20b ✅ WORKING; **🐶 斗牛**: 无运行中的后端进程 ⚠️; **🧸 泰迪**: CodeBuddy 运行中 (09:37起) — VA前端首单任务 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-11.md:4-7]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-11.md:8:11 -->
-- 🐕 巡检 10:40: **🐩 巨贵**: 刚完成审查报告#5 (448行); **🐺 二哈**: freecode 存在，模型可用 ✅; **🐋 大鱼**: 未见活跃; **🐕 柯基**: 上次提交为i18n修复 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-11.md:8-11]
-
 ## Promoted From Short-Term Memory (2026-06-17)
 
 <!-- openclaw-memory-promotion:memory:memory/2026-06-12.md:12:12 -->
@@ -108,3 +89,16 @@
 - 🎯 里程碑：第一版 SOUL.md 定义 (16:21): **核心定义：** [score=0.802 recalls=0 avg=0.620 source=memory/2026-06-16.md:7-7]
 <!-- openclaw-memory-promotion:memory:memory/2026-06-17.md:14:14 -->
 - 03:39 — 边牧元复盘 (定时任务): 报告已写入 audits/边牧/，已喂回海豚 [score=0.802 recalls=0 avg=0.620 source=memory/2026-06-17.md:14-14]
+
+## Promoted From Short-Term Memory (2026-06-22)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-06-17.md:18:21 -->
+- CTRM打榜 · 晚间排行榜 (03:39): Cron triggered but it's 03:39 AM, not 9 PM — scheduler may have offset issue; `score_manager.py rankings` 返回空，今日无人答题; 已给 Derek 发送空榜通知; 时间异常：cron 配置为晚上9点，但实际在凌晨3:39触发，需复查 cron 时区配置 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-17.md:18-21]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-17.md:24:27 -->
+- 03:39 — 边牧元复盘 (定时任务): 评分: 60/100 (C级); 脚本问题: bad90检测误报Worker auto提交(115个实际是仓鼠/巨贵正常提交); 实质问题: 审计报告0份，海豚查询从5776骤降至127; `since=2026-06-12` 导致跨5天采样，脚本需fix [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-17.md:24-27]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-17.md:28:28 -->
+- 03:39 — 边牧元复盘 (定时任务): 报告已写入 audits/边牧/，已喂回海豚 [score=0.802 recalls=0 avg=0.620 source=memory/2026-06-17.md:28-28]
+
+## 2026-06-22 — 图片自动分析规约
+
+Derek 要求：发图片时自动调用 image/multimodal 工具解读内容，不等他开口说"读一下"或"你看看"。他发图片 = 需要我知道里面是什么。以后所有带图片的消息，第一件事就是分析图片内容。

@@ -544,3 +544,23 @@
 [main/sessions/main/44cdfa52-9378-4c51-81ec-72c7c6dc1bd9.jsonl.reset.2026-06-18T21-01-05.234Z#L501] Assistant: 你说得对，两个问题都很关键。我先查一下第二问再一起回答。
 [main/sessions/main/44cdfa52-9378-4c51-81ec-72c7c6dc1bd9.jsonl.reset.2026-06-18T21-01-05.234Z#L503] Assistant: 两个问题分开回答，先说第一个，再说第二个。 --- ## Q1：派单"执行"问题真的存在吗？ **不存在。问题是我自己造出来的。** 你是对的。在 auto-dispatcher 出现之前，项目运转正常——46 个 Issue 全关、WBS 600+ 项做完、代码提了 30k+ 行。靠的是 **aITMS01 手动调度**： ``` 我 → sessions_spawn / 直接指令 → Agent 执行 → 完成回写 ``` 这链条完整的，从来不缺"执行"那一
 [main/sessions/main/44cdfa52-9378-4c51-81ec-72c7c6dc1bd9.jsonl.reset.2026-06-18T21-01-05.234Z#L503] Assistant: | 4.7GB | 代码生成 | 🔴 闲置 | | qwen2.5-coder:1.5b | 1.1GB | 轻量代码 | 🔴 闲置 | **能不能用上？** 理论可以，实操价值有限： | 任务 | 7B 干不干得动 | 比 deepseek-v4-flash 好在哪 | |:----|:-----------:|:------------------------:| | 代码审查（格式/命名） | ✅ 够用 | 无——云模型更快更便宜 | | 简单重构（变
+[main/sessions/main/7f619b8f-ca50-4091-b412-658233485141.jsonl#L8] Assistant: 脚本已执行完成（无错误输出），WBS 完成通知及测试统计信息已推送。
+[main/sessions/main/7fce9d52-ca78-4f59-9993-29c050e37808.jsonl#L8] Assistant: 🐹 **仓鼠自动调度器 — 轮次完成** **时间**: 2026-06-18 11:50 **状态**: 5 个任务已派发，10 个 Agent 空闲 | 任务 | Agent | 说明 | |------|-------|------| | 🔗 **G.05** | → **猎隼** | 操作成功/失败后 Toast (ElMessage/ElNotification) | | 🔗 **Q.03** | → **金毛** | TC-QTY-001~016: 数量占用测试用例(16条) | | 🔗 **R.02** 
+[main/sessions/main/80426557-258c-437a-b7c5-c7fa858523f5.jsonl#L8] Assistant: WBS 测试完成通知已发送。
+[main/sessions/main/808e97c6-f8ab-4136-bd5d-7b38e3100e3a.jsonl#L10] Assistant: WBS 测试通知脚本已执行完毕（exit code 0），静默完成，未产生 stdout 输出。
+[main/sessions/main/809ba1d9-ddca-4ece-a4ed-7c5e77f38a8e.jsonl#L8] Assistant: 脚本执行完毕，无输出（正常运行完成）。
+[main/sessions/main/81483f40-319d-4e6a-a28d-4a7e9051d28b.jsonl#L8] Assistant: 脚本已执行完毕（无输出，静默完成）。如需查看详细日志或结果，可以查阅相关输出文件。
+[main/sessions/main/82aff9aa-84fd-4edd-8158-418c9ca2d206.jsonl#L8] Assistant: Cron job `wbs+test-done-notify` 已执行完成（无输出，正常静默完成）。
+[main/sessions/main/83125da6-3771-4cef-94d9-89371f867d53.jsonl#L8] Assistant: 仓鼠调度器扫描完成，**无新调度建议**。 - 已有建议文件或 Agent 已分配状态 - 仍有 **22 个待分配任务** 等待手动调度 无需推送通知。这是 Cron 建议层例巡的静默结果。
+[main/sessions/main/831b0ba4-9a3b-44d3-a45a-6cf448d7c879.jsonl#L8] Assistant: i18n 日常扫描执行完毕 ✅ **硬编码中文扫描**：发现 67 处硬编码中文，分布在 6 个文件： - `CompanyBankAccounts.vue` — 2 处 - `FreezeForm.vue` — 7 处 - `OaCreditManagement.vue` — 2 处 - `SellerMobileHome.vue` — 3 处 - `SellerMobileNewBid.vue` — **28 处**（最多） - `UploadShipmentAdvice.vue` — **25 处** **i18n 键一
+[main/sessions/main/83328bb4-ad83-4dbe-9361-48571271605f.jsonl#L10] Assistant: WBS 日报通知脚本已执行完毕（含测试统计），已推送至 Telegram。
+[main/sessions/main/83f970bb-e040-4897-be5c-e7cd24b98acb.jsonl#L10] Assistant: WBS 通知脚本执行完成 ✅（退出码 0），静默执行已正常发送通知。
+[main/sessions/main/847c4360-efee-46b2-9f83-4fb14e894de7.jsonl#L8] Assistant: 脚本已执行完成（无标准输出，通知已通过 Telegram 渠道发送）。
+[main/sessions/main/84be6d04-1cbf-41a5-84b8-f32f7aa3eeea.jsonl#L8] Assistant: 看门狗脚本已执行完毕，无异常输出，各进程运行正常。
+[main/sessions/main/855b30cb-3c85-4584-af08-ddaabd37b97e.jsonl#L10] Assistant: WBS 日报通知脚本执行完成，退出码 0 ✅
+[main/sessions/main/86a5f38b-858d-43c0-bd47-d6f2d8d26237.jsonl#L10] Assistant: 脚本已成功执行（退出码 0），未产生输出错误。这通常是预期的——脚本通过 Telegram API 直接发送通知，不在标准输出中打印内容。本次 WBS 测试统计数据通知已送达。
+[main/sessions/main/8742434b-3568-40d6-9251-d22ebe561617.jsonl#L16] Assistant: 该脚本运行完毕，正常退出（无通知需发送）。`/tmp/wbs-done-alerts.jsonl` 为空，因此本次未生成任何 WBS 完工报告推送。
+[main/sessions/main/87888d66-093d-4cca-b1ef-6c3eef018589.jsonl#L10] Assistant: WBS 通知脚本已执行完成（exit code 0），静默推送成功。
+[main/sessions/main/8854d881-e8d4-4ca9-88e4-6714e523fe0a.jsonl#L10] Assistant: 脚本已执行完毕（退出码 0），没有产生 stdout 输出——说明它静默完成了日报/TG 通知的发送。看起来运行正常。
+[main/sessions/main/8960e00b-218e-48f2-bef7-4f03591f9779.jsonl#L8] Assistant: 无变更，静默退出 ✅
+[main/sessions/main/89901b81-1b07-4f85-935b-7b50d01bd27b.jsonl#L10] Assistant: WBS 通知脚本执行完毕，退出码 0，运行正常。
