@@ -1,1 +1,3 @@
 [main/sessions/main/36ebb53e-7522-4053-b5c3-9a5b5a45834c.jsonl#L9] Assistant: 📊 **Fulltest Auto-Loop 报告** ⏱️ **时间**: 2026-06-23 01:15 (UTC: 2026-06-22 17:15) --- **✅ 本次测试结果** - **T=1410** (总测试数) - **PASS=1387** ✅ - **FAIL=1** ⚠️ - **ERROR=22** ⚠️ **对比上次 (T=103 PASS=103 FAIL=0 ERROR=0)** - 🔴 **倒退**: Failures +1，Error +22 - 测试规模大幅扩大 (103 → 14
+[main/sessions/main/6d377ee2-55fb-4a23-960c-cb5f96241eb2.jsonl#L10] Assistant: 静默退出，无变更。
+[main/sessions/main/72bd22ac-8329-4759-9ff0-8bec3f195534.jsonl#L10] Assistant: 静默退出 — 无变更。✅

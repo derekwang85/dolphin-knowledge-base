@@ -490,3 +490,23 @@
 [main/sessions/main/892c594d-e800-4e0d-967c-1b0439d56892.jsonl.reset.2026-06-17T23-20-41.088Z#L171] Assistant: 找到了。终点就是这些端点**还没有实现 REST 控制器**。Domain 和 Mapper 层都有，但没人写 Controller。 ``` ❌ /api/v1/products — 无 Controller（有 ProductMapper + Domain） ❌ /api/v1/price-books — 无 Controller ❌ /api/v1/contracts — 无 Controller（有 ContractMapper） ❌ /api/v1/i
 [main/sessions/main/892c594d-e800-4e0d-967c-1b0439d56892.jsonl.reset.2026-06-17T23-20-41.088Z#L177] Assistant: 好了，全景清晰了。 **修正后的 API 冒烟结果：18 项 | ✅ 12 | ❌ 6** 核心功能都是通的： - Auth Login ✅ - KYC Applications ✅、CDP Companies ✅ - Quotes List/Detail ✅、Orders List ✅ - Regions/Regions Tree ✅、Brokers ✅ - Documents (by tx) ✅、Health ✅ 不通的 6 项是两端情况： 1. **VA 
 [main/sessions/main/892c594d-e800-4e0d-967c-1b0439d56892.jsonl.reset.2026-06-17T23-20-41.088Z#L177] Assistant: case** — 312 条用例先挑已有模块（KYC、Quote、Order、CDP）的执行 2. **先补那几层缺失的 Controller** — 补完了再跑 3. **数据还不够，用 API 再插几条** — 比如我可以用 data-factory 跑一波（通过 API 创建，schema 安全）
+[main/sessions/main/7bc4bbc4-4161-44c8-b2d1-fdfb2fb1b4cb.jsonl#L8] Assistant: Agent watchdog 检查完成，无异常输出，所有监控项正常。
+[main/sessions/main/7c1eda4f-b5fb-4bf0-be98-b5b4bdcaa482.jsonl#L10] Assistant: ✅ Agent 存活保活巡检完成 — 所有 5 个 Agent 进程（斗牛、巨贵、仓鼠、猎隼、大鱼）均存活，无需重启。
+[main/sessions/main/7c268cd2-fefb-4275-94c3-eca1ffb66489.jsonl#L10] Assistant: WBS 通知脚本已执行完毕（exit code 0），测试统计数据已包含。没有 stdout 输出，通知应已通过 Telegram 推送。
+[main/sessions/main/7c444d4e-ce72-4d5d-b02f-de710f047e47.jsonl#L12] Assistant: 巡检完成，5个Agent全部存活，无需重启： - 斗牛 ✅ - 巨贵 ✅ - 仓鼠 ✅ - 猎隼 ✅ - 大鱼 ✅
+[main/sessions/main/7c590954-a408-4068-917a-f2b3b9fbb723.jsonl#L8] Assistant: The watchdog script ran without any output — all checks passed. Let me verify the script's purpose for reference.
+[main/sessions/main/7c590954-a408-4068-917a-f2b3b9fbb723.jsonl#L10] Assistant: 🐾 **Agent Watchdog — 18:10 巡检完成** - 巡检目标：`斗牛` / `巨贵` / `仓鼠` / `猎隼` / `大鱼` - 状态：5 个 Agent Worker 均在运行，无需重启 ✅ 一切正常，静默退出。
+[main/sessions/main/7c9bc833-dc34-4085-8f15-3fb26528023c.jsonl#L10] Assistant: WBS Test Done 通知脚本已执行完毕（0 错误退出）。通知已通过 Telegram 发送（含测试统计数据）。
+[main/sessions/main/7cd83a5c-f837-4bb1-ad70-1e7d79723177.jsonl#L10] Assistant: WBS 通知脚本执行完成，退出码 0 ✅，测试统计已包含在通知中。
+[main/sessions/main/7d8cd6b9-285b-41c5-bf4d-4bf3c2e2da81.jsonl#L8] Assistant: Agent watchdog script ran successfully — no output indicates all checks passed, no issues detected.
+[main/sessions/main/7f050084-cd2a-4e13-8c2d-be66acb5caa5.jsonl#L12] Assistant: WBS 完工通知脚本已执行完毕。通知队列文件不存在（没有待推送的完工报告），脚本正常退出，未发送任何消息。
+[main/sessions/main/7f365a3c-0998-449c-9117-f431cf08b164.jsonl#L10] Assistant: 看门狗巡检完成 ✅ — 5个 Agent 全部存活，无需重启： | Agent | 状态 | |-------|------| | 斗牛 | 🟢 运行中 | | 巨贵 | 🟢 运行中 | | 仓鼠 | 🟢 运行中 | | 猎隼 | 🟢 运行中 | | 大鱼 | 🟢 运行中 |
+[main/sessions/main/892c594d-e800-4e0d-967c-1b0439d56892.jsonl.reset.2026-06-17T23-20-41.088Z#L178] User: 2 和 3。另，数据可以批量造的话，根据我们已有的基础资料，可以的话，造上100条，要给你留足富裕的量。数据工厂data-factory可以抽想成为我们测试部分的一个子命令吗，我可以通过输入“/data-factory tradeoms 100”你就造100条合乎标准的测试数据这种
+[main/sessions/main/892c594d-e800-4e0d-967c-1b0439d56892.jsonl.reset.2026-06-17T23-20-41.088Z#L181] Assistant: 明白，方向和数量都清楚了。我来拆： **策略：** 先造数据（直接走 MySQL INSERT，不依赖 REST 端点），再补 Controller。两条线不阻塞。 先干起来：
+[main/sessions/main/892c594d-e800-4e0d-967c-1b0439d56892.jsonl.reset.2026-06-17T23-20-41.088Z#L197] Assistant: 我把整个结构摸透了。这张表有 30+ 列，之前 SQL 里用的 `document_no` `issue_date` 等字段在现在的 schema 里都不存在——每个表都不简单。 最务实的路径是：**先补 Controller**（确保 Products/Contracts 可用以便后续通过 API 造数据），同时把 data-factory 做成 CLI 命令兜底。
+[main/sessions/main/892c594d-e800-4e0d-967c-1b0439d56892.jsonl.reset.2026-06-17T23-20-41.088Z#L231] Assistant: 汇报进展。 --- **已完成：** **③ 数据工厂** ✅ - 已造入 **Contracts/VA/TT/LC/Documents/Shipments 总计约 100+ 条** 新记录 - 数据库现在：17 合同、22 VA交易、14 TT付款、14 LC、40 交易单据、20 装船通知 - CLI 命令就绪：`/data-factory tradeoms 100` 会调用 `data-factory-full.py` 生成符合现有 schema 的测试数
+[main/sessions/main/892c594d-e800-4e0d-967c-1b0439d56892.jsonl.reset.2026-06-17T23-20-41.088Z#L232] User: 是的，代码补全先。
+[main/sessions/main/892c594d-e800-4e0d-967c-1b0439d56892.jsonl.reset.2026-06-17T23-20-41.088Z#L241] Assistant: 好，开始补 ProductController 和 ContractController。先把目录和文件建起来。
+[main/sessions/main/892c594d-e800-4e0d-967c-1b0439d56892.jsonl.reset.2026-06-17T23-20-41.088Z#L320] Assistant: 🐺 **二哈唤醒报告** · 2026-06-17 08:05 | 检查项 | 状态 | |--------|------| | `freecode` 二进制 | ✅ 可用 (8.9MB, v2) | | `freecode list-free` | ✅ 返回26个免费模型 | | 工作模型配置 | ✅ `openrouter/free` (verified 2026-06-11) | | agent-queue.json | ✅ 存在 | | 二哈队列 | 
+[main/sessions/main/892c594d-e800-4e0d-967c-1b0439d56892.jsonl.reset.2026-06-17T23-20-41.088Z#L331] Assistant: 编译通过！现在打包重启。
+[main/sessions/main/892c594d-e800-4e0d-967c-1b0439d56892.jsonl.reset.2026-06-17T23-20-41.088Z#L351] Assistant: 全部通！跑一次完整冒烟确认：

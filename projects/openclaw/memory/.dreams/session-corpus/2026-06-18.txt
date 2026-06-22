@@ -564,3 +564,20 @@
 [main/sessions/main/8854d881-e8d4-4ca9-88e4-6714e523fe0a.jsonl#L10] Assistant: 脚本已执行完毕（退出码 0），没有产生 stdout 输出——说明它静默完成了日报/TG 通知的发送。看起来运行正常。
 [main/sessions/main/8960e00b-218e-48f2-bef7-4f03591f9779.jsonl#L8] Assistant: 无变更，静默退出 ✅
 [main/sessions/main/89901b81-1b07-4f85-935b-7b50d01bd27b.jsonl#L10] Assistant: WBS 通知脚本执行完毕，退出码 0，运行正常。
+[main/sessions/main/7b302e89-fc67-4931-a0f8-8da7a155261d.jsonl#L68] Assistant: 回归测试报告（2026-06-18 03:47 CST） --- **配置：** ⏭️ 门禁 | ✅ 集成 | ✅ Agent | ⏭️ UAT **集成测试结果（6项）：** 3 ✅ 通过 · 3 ❌ 失败 · 0 ⏭️ 跳过 | 模块 | 状态 | 原因分析 | |------|------|----------| | **Quote** | ✅ PASS | 全部通过 | | **Order** | ✅ PASS | 全部通过 | | **Document** | ✅ PASS | 全部通过 | | **KYC** |
+[main/sessions/main/7b302e89-fc67-4931-a0f8-8da7a155261d.jsonl#L68] Assistant: `PageResponse` 序列化用了 `items` 而非 `content` 3. **Agent 测试执行器** — 集成阶段报告未生成，需要确认执行器脚本是否阻塞或等待后端状态 **建议：** - 修复 KYC、VA 脚本中的 `token` → `accessToken` - 修复 CDP 的 `content` → `items` - 排查 Agent 测试执行器卡住原因
+[main/sessions/main/7b98c506-f6d4-44c5-a923-633d4f28dd43.jsonl#L8] Assistant: ✅ 同步完成，无变更，静默退出。
+[main/sessions/main/7c0912bd-0148-41db-8192-51fb9b16ae61.jsonl#L8] Assistant: 🐹 **仓鼠自动调度完成** — 2026-06-18 11:40 **扫描结果**: 371 个未完成任务，其中 4 个待分配 **空闲 Agent**: 9 个（斗牛、大鱼、巨贵、金毛、二哈、仓鼠、猎隼、柯基、aITMS01） **本轮派单（4 个）：** | 任务 | Agent | 内容 | |------|-------|------| | 🔗 Q.03 | → **金毛** | TC-QTY-001~016：数量占用测试用例（16条） | | 🔗 R.02 | → **斗牛** | TC-PAY-001~01
+[main/sessions/main/7c71b531-e1e6-4afa-b952-71d4c3e3f8d5.jsonl#L10] Assistant: 脚本已执行完毕，退出码 0，运行正常。通知（含测试统计）已发出。
+[main/sessions/main/7c87552e-756d-4cd7-bb38-54828bdf2eed.jsonl#L32] Assistant: Now let me write the audit report:
+[main/sessions/main/7c87552e-756d-4cd7-bb38-54828bdf2eed.jsonl#L34] Assistant: 🔧 **审计+测试巡检 · 06:45 CST** **Git**: 柯基持续执行，近5次均为 `cross-001` ~ `agent-010` 测试提交 ✅ **CPU**: 无 reasonix 进程（上次巡检时还有3个实例，已全部结束） **测试状态**: ``` TEST: 312条 | PASS:98 FAIL:53 NOT_RUN:111 阻塞:0 ``` 📈 **对比昨日**: PASS +13，NOT_RUN -15，FAIL 持平。agent 模块从 0% 涨到 80%，柯基工作有效。 **Issue
+[main/sessions/main/7c94f857-0845-41ef-9649-a4963d3f4d78.jsonl#L12] Assistant: WBS 完工通知脚本已执行。通知文件 `/tmp/wbs-done-alerts.jsonl` 为空，今晚无待推送的 WBS 完工报告，静默退出 ✅
+[main/sessions/main/7cf6a750-edb1-46ba-b6ac-d7ee86fe42d4.jsonl#L10] Assistant: Agent watchdog 巡检完成，一切正常 ✅ 脚本检查了 5 个 agent 进程（斗牛、巨贵、仓鼠、猎隼、大鱼），全部存活，无需重启。无输出即无事。
+[main/sessions/main/7cfbf92b-f14b-438e-b2b6-eb196dadf4c8.jsonl#L8] Assistant: 脚本已执行完毕，无输出返回，说明看门狗检查一切正常，未发现问题。
+[main/sessions/main/7d331851-7e4c-4b89-9e74-6c0dce4fbed0.jsonl#L10] Assistant: 脚本已执行完毕，退出码 0，WBS 测试通知（含测试统计）已发送。
+[main/sessions/main/7d8cb2d3-edc5-4fd1-b640-3694448a2f38.jsonl#L10] Assistant: ✅ WBS 测试完成通知脚本已执行完毕（exit code: 0），通知已发送。
+[main/sessions/main/7d93fd77-64b7-44e8-a5b3-8d2749d68aca.jsonl#L10] Assistant: 同步完成。工作区无变更，已静默退出。 **结果:** `[2026-06-18 14:06:23] No changes detected, skipping.` — exit 0 ✅
+[main/sessions/main/7dd7fba2-971a-4273-a58f-b7d9b0e69673.jsonl#L12] Assistant: Agent watchdog 巡检完成 ✅ — 2026-06-18 06:32 (Asia/Shanghai) 脚本检查了 5 个 Agent 工作进程：**斗牛、巨贵、仓鼠、猎隼、大鱼**，全部存活正常运行，无需重启。
+[main/sessions/main/7df933b9-4dc8-4bac-8861-ce401359dcf8.jsonl#L10] Assistant: WBS 测试统计通知已执行完毕（exit code: 0），通知已通过 Telegram 发送。
+[main/sessions/main/7ea6463a-4bd0-40c9-a58c-2188d4bd0124.jsonl#L10] Assistant: Agent 保活巡检完成 ✅ 所有5个代理进程（斗牛、巨贵、仓鼠、猎隼、大鱼）均正常运行，无需重启。
+[main/sessions/main/7ea81b16-4c9b-48f1-9495-9613cca11af6.jsonl#L8] Assistant: The watchdog script completed with no output (exit 0) — all checks passed.
