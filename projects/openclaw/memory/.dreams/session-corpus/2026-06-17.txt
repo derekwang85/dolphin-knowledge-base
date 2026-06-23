@@ -510,3 +510,33 @@
 [main/sessions/main/892c594d-e800-4e0d-967c-1b0439d56892.jsonl.reset.2026-06-17T23-20-41.088Z#L320] Assistant: 🐺 **二哈唤醒报告** · 2026-06-17 08:05 | 检查项 | 状态 | |--------|------| | `freecode` 二进制 | ✅ 可用 (8.9MB, v2) | | `freecode list-free` | ✅ 返回26个免费模型 | | 工作模型配置 | ✅ `openrouter/free` (verified 2026-06-11) | | agent-queue.json | ✅ 存在 | | 二哈队列 | 
 [main/sessions/main/892c594d-e800-4e0d-967c-1b0439d56892.jsonl.reset.2026-06-17T23-20-41.088Z#L331] Assistant: 编译通过！现在打包重启。
 [main/sessions/main/892c594d-e800-4e0d-967c-1b0439d56892.jsonl.reset.2026-06-17T23-20-41.088Z#L351] Assistant: 全部通！跑一次完整冒烟确认：
+[main/sessions/main/a17d28c2-3855-42c3-889d-9b6574b3d26d.jsonl#L10] Assistant: 看门狗巡检完毕，5 个 Agent（斗牛、巨贵、仓鼠、猎隼、大鱼）全部存活，无需重启。
+[main/sessions/main/a1ae3d66-118e-44d7-a5a9-e76df8d087cd.jsonl#L8] Assistant: 脚本已执行完成（无 stdout 输出，属于正常的静默通知脚本行为）。WBS 测试统计通知已发送。
+[main/sessions/main/a213de9e-6773-4ca3-89dd-2194ab02d189.jsonl#L8] Assistant: 脚本已执行完成（退出码 0，无报错输出）。WBS 通知（含测试统计）已发送。
+[main/sessions/main/a213de9e-6773-4ca3-89dd-2194ab02d189.jsonl#L10] Assistant: ✅ WBS 通知脚本执行成功，测试统计信息已正常推送。
+[main/sessions/main/a268b05f-5941-4dcb-9465-4c586938bff3.jsonl#L10] Assistant: i18n 日常巡检完成。结果摘要： **硬编码中文扫描** — 67 处，6 个文件 | 文件 | 数量 | |------|------| | `SellerMobileNewBid.vue` | 28 处 | | `UploadShipmentAdvice.vue` | 25 处 | | `FreezeForm.vue` | 7 处 | | `SellerMobileHome.vue` | 3 处 | | `CompanyBankAccounts.vue` | 2 处 | | `OaCreditManagement.vu
+[main/sessions/main/a282394e-a744-4325-9f94-ed354bb0be80.jsonl#L10] Assistant: WBS 日常通知脚本执行完毕，退出码 0，已成功发送。
+[main/sessions/main/a2c2be85-1867-4e43-b2c7-2ce5fce7c4d4.jsonl#L10] Assistant: WBS 通知脚本已执行完成（exit code 0）。脚本 `wbs-telegram-notify.py` 带 `--include-test-stats` 参数运行，通知应已通过 Telegram 发送。
+[main/sessions/main/a2d441a0-43dc-4537-851a-7c201120106a.jsonl#L8] Assistant: Agent-watchdog 凌晨巡检完成，无异常输出，一切正常。
+[main/sessions/main/a31393d2-ab6d-4012-b680-a06ab8e24d81.jsonl#L10] Assistant: 静默巡检完成 ✅ 5 个 Agent 工作进程（斗牛、巨贵、仓鼠、猎隼、大鱼）全部存活，无需重启。
+[main/sessions/main/a32f7f6c-7f4f-4a1a-874e-3af283bc69b8.jsonl#L8] Assistant: 看门狗脚本执行完毕，无异常输出，一切正常。
+[main/sessions/main/a375487b-0327-49da-81b1-1ea688c2efda.jsonl#L10] Assistant: Agent 看门狗巡检完成 ✅ — 2026-06-17 01:20 CST，脚本正常退出（exit 0），未检测到异常。
+[main/sessions/main/a3b897b9-8699-4975-a0b6-2c988e03ae1f.jsonl#L12] Assistant: 📊 **TradeOMS 测试&Issue 日报** 生成时间: 2026-06-16 19:38 UTC+8 ━━━ 第一维 · 测试完工看板 ━━━ 📦 **按模块** KYC 准入 [░░░░░░░░░░░░░░░] 0% (0/25) 客户数据平台 [░░░░░░░░░░░░░░░] 0% (0/16) 产品报价 [░░░░░░░░░░░░░░░] 0% (0/18) 交易管理 [░░░░░░░░░░░░░░░] 0% (0/35) 交易单据 [░░░░░░░░░░░░░░░] 0% (0/25) Buyer 端
+[main/sessions/main/a3cedbf1-aa85-4037-a408-3fa6983ee6e1.jsonl#L8] Assistant: 看门狗脚本执行完成，无任何输出（一切正常，无需干预）。当前时间：2026-06-17 00:35 (Asia/Shanghai)。
+[main/sessions/main/a401228a-8c03-4dc0-9a70-782a980a8b14.jsonl#L10] Assistant: **Agent 看门狗巡检完成 ✅** — 北京时间 21:40 巡检 5 个 agent 进程（斗牛、巨贵、仓鼠、猎隼、大鱼）： - ✅ **全部存活**，无需重启。
+[main/sessions/main/a40c4f1b-0dad-4b68-ba86-3458031b7701.jsonl#L10] Assistant: 巡检已完成，结果：**所有 5 个 Agent 均存活，无重启事件。** | Agent | 状态 | |-------|------| | 斗牛 | ✅ 运行中 | | 巨贵 | ✅ 运行中 | | 仓鼠 | ✅ 运行中 | | 猎隼 | ✅ 运行中 | | 大鱼 | ✅ 运行中 | 静默保活正常，无需干预。
+[main/sessions/main/a43dc8d4-b94b-4c08-a2aa-6d66d98d0ace.jsonl#L12] Assistant: WBS 测试完成通知脚本已执行完毕（退出码 0）。脚本正常完成通知发送，无异常。
+[main/sessions/main/a4988288-bc3a-401b-b7fe-efe646fda290.jsonl#L10] Assistant: WBS 测试统计通知脚本已成功执行（退出码 0），通知已通过 Telegram 发送。
+[main/sessions/main/a5be8cab-9de6-41af-83e5-43bfd5944b91.jsonl#L10] Assistant: 脚本已执行成功（退出码 0），已将 WBS 测试统计通知发送到 Telegram。
+[main/sessions/main/a66f21aa-dc48-45a5-9a60-7a6421a1027f.jsonl#L10] Assistant: 例行巡检完成 ✅ 进程守护脚本正常退出（exit code 0），未发现异常。
+[main/sessions/main/a6a69739-09cb-4c2b-949c-4fa9eb9bc695.jsonl#L12] Assistant: WBS 完工通知脚本已执行完毕。JSONL 通知队列为空，无待推送的完工报告，脚本正常退出（exit 0）。
+[main/sessions/main/a7bedfe0-cfd0-44ea-84da-2d5d58f983ba.jsonl#L12] Assistant: 🐾 **Agent 保活巡检完成** — 所有 5 个 Agent 均存活： | Agent | 状态 | |-------|------| | 🐂 斗牛 | ✅ 运行中 | | 🐕 巨贵 | ✅ 运行中 | | 🐹 仓鼠 | ✅ 运行中 | | 🦅 猎隼 | ✅ 运行中 | | 🐟 大鱼 | ✅ 运行中 | 本次无需重启，一切正常。
+[main/sessions/main/a886fdbb-346d-4b08-a52a-ca6f4bb6ae1c.jsonl#L10] Assistant: 巡检完成，无异常。Agent 存活状态： | Agent | 状态 | |-------|------| | 🐶 **斗牛** | ✅ 存活 | | 🐾 **巨贵** | ✅ 存活 | | 🐹 **仓鼠** | ✅ 存活 | | 🦅 **猎隼** | ✅ 存活 | | 🐟 **大鱼** | ✅ 存活 | 5 个 Agent Worker 全部在线，无需重启。
+[main/sessions/main/a91da9c6-8a11-40d4-a4df-16aba28d2d98.jsonl#L8] Assistant: 脚本已执行（无 stdout 输出，预期行为——通知已通过 Telegram 推送）。
+[main/sessions/main/a924118a-0e07-4ca8-9bf3-a67bcd5b974a.jsonl#L10] Assistant: 看门狗脚本执行完毕，无异常输出 — 系统状态正常。
+[main/sessions/main/a99dce3d-ee83-4a21-b831-8cd0d6c7b1d9.jsonl#L10] Assistant: 输出已 announce 到 wecom:2207。
+[main/sessions/main/a9a9a7e6-5b7f-4cca-9deb-812d7bba9435.jsonl#L10] Assistant: Agent watchdog script ran successfully (exit code 0) at 16:30 CST — no issues detected, no output logged. All clear.
+[main/sessions/main/a9abb24e-97b5-4f98-b1dc-8ce3af77e9d7.jsonl#L8] Assistant: WBS 通知脚本已执行完成（`--include-test-stats` 模式），无报错退出。
+[main/sessions/main/aa30efee-cc1f-4ecb-abcf-aac9938d64c5.jsonl#L8] Assistant: WBS 通知脚本已执行完毕（含测试统计），无异常输出，通知已推送。
+[main/sessions/main/ab503c57-466c-499f-a875-ae42446ad234.jsonl#L10] Assistant: 定期巡检完成。5个Agent全部在线，无需重启。 | Agent | 状态 | |-------|------| | 斗牛 | ✅ 存活 | | 巨贵 | ✅ 存活 | | 仓鼠 | ✅ 存活 | | 猎隼 | ✅ 存活 | | 大鱼 | ✅ 存活 |
+[main/sessions/main/ab5bec7f-c022-4440-8dac-92413eb7fa65.jsonl#L8] Assistant: Agent watchdog check completed successfully — no issues reported.

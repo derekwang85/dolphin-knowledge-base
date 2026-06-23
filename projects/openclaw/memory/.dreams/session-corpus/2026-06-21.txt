@@ -288,3 +288,28 @@
 [main/sessions/main/9aa61433-8b13-401c-bf22-bc4f6194bde2.jsonl#L10] Assistant: 脚本已执行完毕。`wbs-telegram-notify.py` 检查了通知队列： - **JSONL 通知文件**：`/tmp/wbs-done-alerts.jsonl` — 不存在或为空，无待推送通知 - **结果**：静默退出，未发送任何 Telegram 消息 一切正常，无非必要的操作。
 [main/sessions/main/9ac0e0dc-2f6e-47c6-a5a1-320dffbc899d.jsonl#L10] Assistant: WBS Telegram 通知脚本已执行完毕（exit code 0），包含测试统计信息。
 [main/sessions/main/9bbb162f-f0f5-4937-86d0-646c8738e258.jsonl#L10] Assistant: 脚本已成功执行（退出码 0），WBS 测试完成通知已发送。
+[main/sessions/main/136b3a35-978b-49e8-8bbc-fe44e38610d9.jsonl.reset.2026-06-21T20-00-13.547Z#L646] Assistant: FAIL**（TCR v20 中 statusSummary 的遗留问题）： - `last_execution_status` 实际显示 362 PASS / 3 PASS_WITH_FINDINGS / 2 SKIPPED = 367 - 59 FAIL 是旧 schema 残留计数，全量重跑 fulltest 后可统一刷新 - 建议：在 backend 重启 + 密码稳定后，跑一次 `bash scripts/fulltest-auto-loop.sh` 
+[main/sessions/main/136b3a35-978b-49e8-8bbc-fe44e38610d9.jsonl.reset.2026-06-21T20-00-13.547Z#L647] User: OK，按照你的建议，完成准备工作后（重启前、后端，解决密码打码的呆滞错误，其他），derekfulltest tradeoms
+[main/sessions/main/136b3a35-978b-49e8-8bbc-fe44e38610d9.jsonl.reset.2026-06-21T20-00-13.547Z#L650] Assistant: 收到，Derek。按 derekfulltest 流程走 —— 准备 → 跑测 → 分析。开始第 0 步。
+[main/sessions/main/136b3a35-978b-49e8-8bbc-fe44e38610d9.jsonl.reset.2026-06-21T20-00-13.547Z#L654] Assistant: Backend 200 ✅, frontend 000 ❌。先修复前后端，然后跑测。
+[main/sessions/main/136b3a35-978b-49e8-8bbc-fe44e38610d9.jsonl.reset.2026-06-21T20-00-13.547Z#L658] Assistant: 前后端就绪 ✅。进入第 1 步 — 跑测。
+[main/sessions/main/136b3a35-978b-49e8-8bbc-fe44e38610d9.jsonl.reset.2026-06-21T20-00-13.547Z#L664] Assistant: 种子播种完成 ✅。进入第 1 步 — 跑测。
+[main/sessions/main/136b3a35-978b-49e8-8bbc-fe44e38610d9.jsonl.reset.2026-06-21T20-00-13.547Z#L668] Assistant: Playwright 44/44 ✅。现在跑 Java 测试 + UAT shell：
+[main/sessions/main/136b3a35-978b-49e8-8bbc-fe44e38610d9.jsonl.reset.2026-06-21T20-00-13.547Z#L686] Assistant: 全量完成。Buyer UAT 脚本登录问题的修复收个尾：
+[main/sessions/main/136b3a35-978b-49e8-8bbc-fe44e38610d9.jsonl.reset.2026-06-21T20-00-13.547Z#L698] Assistant: Buyer UAT 修复后：11 PASS / 2 FAIL（409 状态冲突 — 测试编排数据扰动）/ 1 SKIP — 核心功能全部通过。
+[main/sessions/main/136b3a35-978b-49e8-8bbc-fe44e38610d9.jsonl.reset.2026-06-21T20-00-13.547Z#L703] User: 我刚才试着前端登陆一下，deal cap会报500错误，1是找到原因，2是查一下之前测试为什么会测不到
+[main/sessions/main/136b3a35-978b-49e8-8bbc-fe44e38610d9.jsonl.reset.2026-06-21T20-00-13.547Z#L704] Assistant: 好，Deal Recap 500 — 马上查根因 + 测试为什么没抓到。
+[main/sessions/main/136b3a35-978b-49e8-8bbc-fe44e38610d9.jsonl.reset.2026-06-21T20-00-13.547Z#L708] Assistant: **找到了！两个 500**: - `GET /transactions` - 500 - `GET /documents?page=0&size=10` - 500 - `POST /transactions/{id}/documents` - 参数名是 `documentType` 不是 `docType` 查根因：
+[main/sessions/main/a1b4536a-eb30-48d5-8795-33fad81ba9c6.jsonl#L12] Assistant: WBS 通知脚本已执行完成（exit code 0），含测试统计信息已推送。
+[main/sessions/main/a206f044-a0cf-4603-9596-92740130ab39.jsonl#L10] Assistant: WBS 测试完成通知脚本已执行完毕，退出码 0，执行成功 ✅
+[main/sessions/main/a3c4ec14-23e9-476b-b871-4ff0ba591462.jsonl#L10] Assistant: WBS 测试完成通知脚本已执行成功（exit code 0），通知已发送。
+[main/sessions/main/a412ed42-2832-4a09-87c6-70133a319e7b.jsonl#L10] Assistant: WBS 测试通知脚本已执行完成（exit code 0），通知已发送。
+[main/sessions/main/a4a37353-655d-4ec6-86f5-fb62b59551f9.jsonl#L10] Assistant: WBS 周报通知脚本已执行完毕（exit code: 0 ✅），包含测试统计。
+[main/sessions/main/a5458e72-d86b-4684-821b-59f34dd77f0e.jsonl#L8] Assistant: 脚本已执行完成（无报错，静默退出正常）。
+[main/sessions/main/a67803d5-0a66-4e94-b992-79a15c28798d.jsonl#L8] Assistant: WBS test通知脚本已执行完毕（无终端输出，通知已通过脚本直接发送）。
+[main/sessions/main/a7754676-d84d-4627-9b20-b1bcc011306f.jsonl#L10] Assistant: WBS 日报通知脚本已执行完毕（exit code 0），含测试统计数据的推送已完成。
+[main/sessions/main/a82106a6-e9c6-4ec9-adb0-95288b3d1ad2.jsonl#L10] Assistant: WBS 测试通知脚本已执行完毕（exit code 0），通知已发出。
+[main/sessions/main/a84601ed-31ea-4389-8ec2-b21482822522.jsonl#L8] Assistant: 脚本已执行完毕（零输出，通常表示静默成功发送通知）。
+[main/sessions/main/a869111a-ab99-4f95-842b-76cb0afdb1e6.jsonl#L8] Assistant: 脚本执行完成，WBS 测试统计通知已发送（无异常输出）。
+[main/sessions/main/a8c62aa9-ccae-43ab-b34b-a887d2a40115.jsonl#L10] Assistant: WBS 日报通知脚本已执行完毕（exit code 0），包含测试统计信息的 Telegram 通知已发送。
+[main/sessions/main/a97611ff-35df-4c63-a821-dfe789a985b5.jsonl#L8] Assistant: WBS 测试通知脚本执行完成，无报错。

@@ -501,3 +501,22 @@
 [main/sessions/main/8197e524-002b-4a82-b91e-129a06e3c65c.jsonl.reset.2026-06-21T00-33-51.143Z#L118] Assistant: `[blocked]` | `[blocked]void(0)` | **Why these values?** The `sanitize()` method operates in two stages: 1. **Regex replacement**: Matches the dangerous pattern (e.g., `alert(`) and replaces the matched portion with `[blocked]`, leav
 [main/sessions/main/8197e524-002b-4a82-b91e-129a06e3c65c.jsonl.reset.2026-06-21T00-33-51.143Z#L122] Assistant: All 51 tests pass — **0 failures, 0 errors**. Here's what was fixed: ## Summary of Changes ### 1. OrderStateMachine.java — Add `EXECUTING` state - Added `EXECUTING` as a transition from `CONFIRMED` - Defined `EXECUTING → DEPOSIT_PAID
 [main/sessions/main/8197e524-002b-4a82-b91e-129a06e3c65c.jsonl.reset.2026-06-21T00-33-51.143Z#L122] Assistant: deposit-confirmed status set by `DepositService`) ### 4. OrderDomainServiceTest.java — Fix `confirmBalance_DepositNotPaid_Throws` - Added missing `paymentRatioService.isSplitPayment()` mock setup to `BalanceServiceTest.setUp()` (was 
+[main/sessions/main/a2a5b293-fa5f-491a-a422-2fc04347b969.jsonl#L10] Assistant: WBS 通知脚本执行完成（exit code 0），测试统计已包含。
+[main/sessions/main/a2cb8e95-9a71-4aac-a26b-f25909c27887.jsonl#L10] Assistant: WBS Telegram 通知脚本执行完毕，退出码 0，已成功发送（含测试统计）。
+[main/sessions/main/a50b078f-f089-426b-88d0-b6f89ba6e3d7.jsonl#L8] Assistant: 脚本已执行完成（无终端输出，属于静默通知脚本的正常行为）。
+[main/sessions/main/a6e1edc7-64a4-433c-ac21-8e4ece7a6f18.jsonl#L10] Assistant: WBS test-done 通知脚本已执行完成（exit code 0），包含测试统计。
+[main/sessions/main/a6fe1298-7445-4688-9bbe-e4f1867121be.jsonl#L8] Assistant: 脚本已执行完成（无标准输出，静默运行正常）。已将 WBS 进度及测试统计通知推送至 Telegram。
+[main/sessions/main/a746bf6a-f63d-4dcd-9a72-d3ddd4823c09.jsonl#L10] Assistant: WBS 测试通知脚本已成功执行（exit code 0），测试统计通知已通过 Telegram 发送完成。
+[main/sessions/main/a74c3072-0b5a-44b8-9a46-212fdfcb7115.jsonl#L10] Assistant: WBS 通知脚本执行完成（exit code 0）。由于该脚本通过 Telegram 发送通知，控制台无额外输出属于正常行为。
+[main/sessions/main/a77199e5-ae7e-476c-be84-36151255b7b8.jsonl#L10] Assistant: WBS 通知脚本已执行完成（exit code 0），静默发送通知，无额外输出。
+[main/sessions/main/a7882ebb-5154-4a7f-9c1f-0e07a1a18967.jsonl#L12] Assistant: ✅ WBS 完工报告通知脚本已执行完毕，通知文件已清空，所有通知已推送到 Telegram。无需额外操作。
+[main/sessions/main/a7a2a3cb-069d-4c40-abfb-f4ca532a1b0f.jsonl#L8] Assistant: 脚本已执行完成（无控制台输出，通知已发送到 Telegram）。
+[main/sessions/main/a80e2ecf-c199-419a-a685-60901a7de5c9.jsonl#L10] Assistant: 已完成 WBS 通知脚本（含测试统计），于 09:45 触发，执行无异常。
+[main/sessions/main/a8bc9efc-1eee-4f0f-9edd-06b2a221a713.jsonl#L10] Assistant: WBS test-done 通知脚本已执行完毕，退出码 0，运行正常。
+[main/sessions/main/a9233af7-845a-43e2-8966-922a84e70f5d.jsonl#L8] Assistant: 脚本已执行完成（退出码 0）。WBS Telegram 通知（含测试统计）已发送。
+[main/sessions/main/a97dc02c-3bbc-4795-95c9-82112932abfc.jsonl#L10] Assistant: WBS 测试统计通知已成功发送（退出码 0）。
+[main/sessions/main/a9a7379a-9057-4243-839f-4e480eb81f73.jsonl#L10] Assistant: 脚本已执行完成，WBS 测试统计数据通知已发送。
+[main/sessions/main/a9ccbae9-36fc-4eba-861b-d89a34c30172.jsonl#L10] Assistant: WBS 日报通知脚本已执行完毕（含测试统计），无报错。
+[main/sessions/main/a9dc341e-30c0-4b43-96e1-dd77bb539d92.jsonl#L8] Assistant: 脚本已执行完成（无错误输出），WBS + 测试统计通知已发送。
+[main/sessions/main/ab354634-9d6d-482f-91da-1917421da0c0.jsonl#L10] Assistant: 无变更，静默退出 ✅
+[main/sessions/main/ab4002e2-033c-414a-8674-e0881cea0b7e.jsonl#L18] Assistant: 🧠 **海豚审计报告** | 2026-06-20 15:19 ✅ 服务健康 (HTTP 200) 📊 知识库稳定：15 wings / 557 pages / 2,659 chunks 🔄 Graph 提取活跃：Entities 849→**1,675** (+826)，Links 1,640→**2,911** (+1,271) 📈 进程运行中 (1,100/2,455 pages, ~71min ETA)

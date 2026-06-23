@@ -581,3 +581,39 @@
 [main/sessions/main/7df933b9-4dc8-4bac-8861-ce401359dcf8.jsonl#L10] Assistant: WBS 测试统计通知已执行完毕（exit code: 0），通知已通过 Telegram 发送。
 [main/sessions/main/7ea6463a-4bd0-40c9-a58c-2188d4bd0124.jsonl#L10] Assistant: Agent 保活巡检完成 ✅ 所有5个代理进程（斗牛、巨贵、仓鼠、猎隼、大鱼）均正常运行，无需重启。
 [main/sessions/main/7ea81b16-4c9b-48f1-9495-9613cca11af6.jsonl#L8] Assistant: The watchdog script completed with no output (exit 0) — all checks passed.
+[main/sessions/main/a1212623-99f4-4583-9d4d-d39ce7229eed.jsonl#L10] Assistant: WBS 日报通知脚本已执行完成（exit code 0），通知消息已发送。
+[main/sessions/main/a13ec34e-843d-4fa9-9fa7-50f5da3e83f3.jsonl#L10] Assistant: Cron job `wbs+test-done-notify` 已执行完毕 ✅ 脚本 `wbs-telegram-notify.py --include-test-stats` 运行成功（exit code 0），WBS 日报 + 测试统计通知已发送至 Telegram。
+[main/sessions/main/a178f51a-fbd2-4d96-8526-1713a166cfd0.jsonl#L16] Assistant: WBS 完工通知脚本已按时执行完毕 ✅ 结果： - `/tmp/wbs-done-alerts.jsonl` 不存在（无待推送通知） - 脚本正常退出（exit code 0），无消息发送 说明当前时段没有待通知的 WBS 完工项，一切正常。
+[main/sessions/main/a18855b6-aaa8-4753-a52e-9fffe2bfdd45.jsonl#L12] Assistant: WBS 日报通知脚本已执行完成（exit code 0），统计信息已通过 Telegram 推送。
+[main/sessions/main/a2dec7af-2dfc-48ee-afb1-9af1a84279f1.jsonl#L10] Assistant: 看门狗巡检完成 ✅ — 所有5个Agent（斗牛、巨贵、仓鼠、猎隼、大鱼）均在运行，无需重启。
+[main/sessions/main/a313c4be-2b54-4334-9f9c-90fdd5cb7787.jsonl#L6] Assistant: 收到，晚间预热 cron 触发 ✅ 21:00 的排行榜推送准备就绪，无需额外操作。
+[main/sessions/main/a322ce42-6280-4901-8644-5382884dc3fb.jsonl#L10] Assistant: 脚本 `wbs-telegram-notify.py --include-test-stats` 已成功执行（退出码 0），WBS 测试统计通知已发送。
+[main/sessions/main/a352b483-b96e-4996-9280-1e4f0e75576b.jsonl#L8] Assistant: Agent watchdog 已执行完毕，无异常输出（退出码 0），系统状态正常。
+[main/sessions/main/a3f04a60-36ff-4b40-9812-c6a27200710e.jsonl#L10] Assistant: Agent watchdog 执行完毕，退出码 0，无异常输出 — 所有守护检查通过，系统运行正常。
+[main/sessions/main/a4676aba-22c2-4b33-9fc6-e7cb87e0b598.jsonl#L8] Assistant: 仓鼠调度建议器扫描完成： 没有新的调度建议（已有建议文件或 agent 已分配） 待分配任务 22 个，等待手动调度 今天无需额外推送，暂不打扰 Derek。
+[main/sessions/main/a49ca39a-0e15-403e-b011-becc2263f618.jsonl#L10] Assistant: 巡检完成 ✅ 所有 5 个 Agent（斗牛、巨贵、仓鼠、猎隼、大鱼）均在运行，无需重启。
+[main/sessions/main/a4c8274e-cd32-437f-bfe9-01075cfec9c9.jsonl#L10] Assistant: 脚本已成功执行（exit code 0），未输出到 stdout/stderr。应该是通过内部消息通道发送了通知。让我查看脚本内容确认其行为。
+[main/sessions/main/a4c8274e-cd32-437f-bfe9-01075cfec9c9.jsonl#L14] Assistant: 通知缓存文件不存在，当前无待推送的 WBS 完工通知。脚本正常退出（无操作），一切正常。
+[main/sessions/main/a5035351-1143-46ff-bdc9-41b3c5d0c4f2.jsonl#L10] Assistant: 🟢 **Agent 存活巡检完成** — 所有 5 个 Agent 均在线，无需重启。 | Agent | 状态 | |---|---| | 斗牛 | ✅ 正常 | | 巨贵 | ✅ 正常 | | 仓鼠 | ✅ 正常 | | 猎隼 | ✅ 正常 | | 大鱼 | ✅ 正常 | 静默通过，无异常。
+[main/sessions/main/a5538c16-a537-463f-8de8-35a249a03430.jsonl#L8] Assistant: 通知已推送完成。
+[main/sessions/main/a5bb941c-f085-4734-9cde-78d1b1ce37ba.jsonl#L10] Assistant: WBS 通知脚本已执行完毕（退出码 0），带有测试统计信息。通知已通过 Telegram 发送，无异常。
+[main/sessions/main/a6b643c3-f605-49e9-8a62-271ad4768b3d.jsonl#L10] Assistant: 看门狗巡检完毕，5个 Agent 全部存活，无需重启 ✅
+[main/sessions/main/a6fb11c7-60c6-4665-85de-ccb0d5980371.jsonl#L10] Assistant: Agent 存活巡检完成 ✅ 全部 5 个 Agent 护工（斗牛、巨贵、仓鼠、猎隼、大鱼）均正常运行，无需重启。
+[main/sessions/main/a7335534-8123-4c80-b860-097df98705b5.jsonl#L12] Assistant: WBS Telegram 通知脚本执行完毕（exit code 0）。已检查通知队列，如有待发通知已通过 Telegram 推送完成，无待发则静默退出。
+[main/sessions/main/a79d101a-0b46-4c2a-a95e-f21f6ff6cb39.jsonl#L10] Assistant: WBS Telegram 通知脚本已执行完成（exit code 0），包含了测试统计数据。通知已发送。
+[main/sessions/main/a7ef8603-12f1-4258-8941-7131cc3b9222.jsonl#L10] Assistant: 巡检完成：**斗牛、巨贵、仓鼠、猎隼、大鱼** 五名 Agent 全部存活，无需重启。
+[main/sessions/main/a80135c5-c28f-4745-a577-fc3a75722fad.jsonl#L8] Assistant: 看门狗任务完成 ✅ 已守护重启 5 个 Agent 进程： | Agent | PID | 状态 | |-------|-----|------| | 斗牛 | 3633428 | 🔁 重启 | | 巨贵 | 3633451 | 🔁 重启 | | 仓鼠 | 3633513 | 🔁 重启 | | 猎隼 | 3633621 | 🔁 重启 | | 大鱼 | 3633763 | 🔁 重启 |
+[main/sessions/main/a89ebf64-7404-45cb-adba-fb3953c4a86f.jsonl#L12] Assistant: WBS 完工通知脚本已执行完毕（exit 0），当前时段无待推送的完工通知，一切正常。
+[main/sessions/main/a8dda501-9948-429e-af4e-7f86e5adcb34.jsonl#L10] Assistant: 完毕。无变更，静默退出（exit code 0）。
+[main/sessions/main/a926c95c-0255-42ab-a4ab-f3c9b1a84c9c.jsonl#L10] Assistant: WBS 通知脚本执行完成（exit code 0），测试统计包含在内。
+[main/sessions/main/a9394dcc-7d24-40e4-9723-42c2d67df10a.jsonl#L10] Assistant: WBS 通知脚本已执行完成（退出码 0），包含测试统计的日报通知已发送。
+[main/sessions/main/a9983ab4-f242-4530-96ce-3b0f979379c4.jsonl#L14] Assistant: WBS 通知脚本已执行完毕。当前无新的 WBS 完工通知（`/tmp/wbs-done-alerts.jsonl` 为空），脚本按设计静默退出，未发送 Telegram 消息。
+[main/sessions/main/a9d55fff-dd77-42c8-b9e0-5e3f481e408d.jsonl#L10] Assistant: WBS 测试通知脚本已执行完毕（退出码 0），测试统计信息已通过 Telegram 推送。
+[main/sessions/main/a9ddf2d6-b760-495e-b2cd-9e496f2d1543.jsonl#L8] Assistant: WBS 通知任务已完成（`--include-test-stats`），脚本执行无异常。
+[main/sessions/main/a9ea9360-b6c6-4702-b433-8674ff97f8b0.jsonl#L10] Assistant: Cron job `wbs+test-done-notify` 执行完成 ✅ 脚本 `wbs-telegram-notify.py --include-test-stats` 已运行成功（exit code 0），WBS 测试统计通知已发送。
+[main/sessions/main/ab0e63c6-bd1a-46aa-97c7-5d680f42c552.jsonl#L10] Assistant: ✅ **Agent Watchdog 巡检完成** (2026-06-18 04:50 CST) 巡检 5 个 Agent 进程：斗牛、巨贵、仓鼠、猎隼、大鱼 — **全部存活**，无需重启。
+[main/sessions/main/ab607920-f7af-46fe-9b32-8a57e7ba9a1b.jsonl#L8] Assistant: Agent watchdog script executed successfully (no output = no issues detected).
+[main/sessions/main/ab62abde-1c03-4704-9895-5727f96fa04c.jsonl#L5] User: [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task] ## 任务: TC-POC-001 — PaddleOCR 仓鼠集群集成验证 ### 背景 我们刚刚部署了 PaddleOCR 服务（http://localhost:18891，PP-OCRv5-server），现在需要验证它对 TradeOM
+[main/sessions/main/ab62abde-1c03-4704-9895-5727f96fa04c.jsonl#L5] User: docs/development/paddleocr-baseline.md - 包含: OCR text_blocks JSON 快照、质量评估、agent 使用示例 ### 输出范围 - 报告写入: `~/TradeOMS/docs/development/paddleocr-baseline.md` - OCR JSON 快照 - 不修改 TradeOMS 源码 Begin. Execute the assigned task to completion.
+[main/sessions/main/ab62abde-1c03-4704-9895-5727f96fa04c.jsonl#L35] Assistant: Now let me write the baseline report.
+[main/sessions/main/ab62abde-1c03-4704-9895-5727f96fa04c.jsonl#L39] Assistant: ## TC-POC-001 完成 ### 执行摘要 1. **截图**: 成功截取 TradeOMS 登录页 (1920×1080, http://10.88.97.77:5173/)。Dashboard 不可直接访问（SPA 重定向到登录，需要认证）。 2. **PaddleOCR 调用**: 对登录页截图执行 OCR，检出 25 个文本块。 3. **OCR 质量评估**: - **平均置信度**: 0.9440 - **96% 的块置信度 ≥ 0.90** — 非常优秀 - **1 个低置信度假阳性**: 块 #5 `
