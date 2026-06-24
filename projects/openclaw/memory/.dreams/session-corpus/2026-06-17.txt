@@ -540,3 +540,34 @@
 [main/sessions/main/aa30efee-cc1f-4ecb-abcf-aac9938d64c5.jsonl#L8] Assistant: WBS 通知脚本已执行完毕（含测试统计），无异常输出，通知已推送。
 [main/sessions/main/ab503c57-466c-499f-a875-ae42446ad234.jsonl#L10] Assistant: 定期巡检完成。5个Agent全部在线，无需重启。 | Agent | 状态 | |-------|------| | 斗牛 | ✅ 存活 | | 巨贵 | ✅ 存活 | | 仓鼠 | ✅ 存活 | | 猎隼 | ✅ 存活 | | 大鱼 | ✅ 存活 |
 [main/sessions/main/ab5bec7f-c022-4440-8dac-92413eb7fa65.jsonl#L8] Assistant: Agent watchdog check completed successfully — no issues reported.
+[main/sessions/main/d1faa7e6-7930-43a0-b3ac-7fd06c0e0ada.jsonl#L10] Assistant: WBS test通知脚本已执行完毕（exit code 0），测试统计通知已成功发送。
+[main/sessions/main/d26c9d23-bb70-4a04-9971-5b7b11078251.jsonl#L8] Assistant: 看门狗脚本已执行完毕，无输出——一切正常。
+[main/sessions/main/d26d252d-ea67-4755-a3b2-728cf195a4ae.jsonl#L10] Assistant: WBS Telegram 通知脚本已执行完成（exit code 0），含测试统计。
+[main/sessions/main/d2bb5060-a79f-4ade-b27a-923a03030908.jsonl#L8] Assistant: Agent watchdog 脚本已执行完毕，无异常输出——所有检查均通过。
+[main/sessions/main/d395979b-b7b8-4593-8ef2-30569c999305.jsonl#L8] Assistant: The WBS notification script ran successfully (no errors). It sent the daily WBS test notification with test statistics included.
+[main/sessions/main/d398a9d1-5dd8-4257-9738-999d529a2447.jsonl#L10] Assistant: Watchdog completed successfully (exit code 0) — all clear, no issues detected.
+[main/sessions/main/d39a0bbe-1634-4668-98ad-2031725b61d4.jsonl#L10] Assistant: 凌晨4:45 定时巡检完成。`agent-watchdog.sh` 脚本已执行，检查了 5 个 Agent（斗牛、巨贵、仓鼠、猎隼、大鱼），当前均未运行（正常状态，非工作时间段）。无异常。
+[main/sessions/main/d3b8b774-3bc2-441e-8293-3f199b50f4b9.jsonl#L10] Assistant: WBS 测试统计通知脚本已执行完毕（exit code 0），日报已静默发送。
+[main/sessions/main/d3dba67c-b5f3-4b55-9aa8-d6d3fd488cb9.jsonl#L10] Assistant: WBS 测试统计通知脚本已执行完毕，退出码 0，通知已发送。
+[main/sessions/main/d409b9b8-1f4e-4f60-9f39-64c1c145e937.jsonl#L10] Assistant: WBS telegram notify 脚本已成功执行（exit code 0），包含测试统计，通知已发送。
+[main/sessions/main/d4361a23-9559-4778-989f-818f40a1c687.jsonl#L8] Assistant: The watchdog script ran with no output — everything is healthy. Let me check the script to understand what it monitors.
+[main/sessions/main/d4361a23-9559-4778-989f-818f40a1c687.jsonl#L10] Assistant: **Agent Watchdog — 03:30 巡检完成** ✅ 巡检5个 agent 进程（斗牛、巨贵、仓鼠、猎隼、大鱼）全部存活，无需重启。
+[main/sessions/main/d4436722-f1ae-4a66-90a8-81c5a19a2201.jsonl#L8] Assistant: 静默退出——无变更。
+[main/sessions/main/d4acb90e-d1ba-46c4-ba39-01942bee799d.jsonl#L8] Assistant: 脚本已执行完成（无标准输出，通知已通过 Telegram 通道发送）。
+[main/sessions/main/d669e989-d053-4cd9-82c1-56efe0887ca8.jsonl#L8] Assistant: 脚本已执行完毕（无显式输出，通知通过 Telegram 直接发送）。
+[main/sessions/main/d74b3a34-9151-4f87-8ed6-1bbbe43a5db2.jsonl#L34] Assistant: 📊 WBS 审计 (2026-06-17 01:00) 📊 审计摘要: 0commit | 0 0agent | 0回写 | 回写率0% 🎯 Test Case: 312条 | PASS:9 ✅ FAIL:9 ❌ NOT_RUN:257 ⬜ 阻塞:0 📋 Issue Log: 31 | ✅已解决:17 ⏳进行中:1 📝待处理:13 ⚠️ P0 未关闭: 2
+[main/sessions/main/d74b3a34-9151-4f87-8ed6-1bbbe43a5db2.jsonl#L35] Assistant: 📊 WBS 审计 (2026-06-17 02:01) 📊 审计摘要: 5commit | 4agent | 0回写 | 回写率0% 🎯 Test Case: 312条 | PASS:9 ✅ FAIL:9 ❌ NOT_RUN:257 ⬜ 阻塞:0 📋 Issue Log: 31 | ✅已解决:17 ⏳进行中:1 📝待处理:13 ⚠️ P0 未关闭: 2
+[main/sessions/main/d74b3a34-9151-4f87-8ed6-1bbbe43a5db2.jsonl#L36] Assistant: 📊 WBS 审计 (2026-06-17 03:01) 📊 审计摘要: 4commit | 4agent | 0回写 | 回写率0% 🎯 Test Case: 312条 | PASS:9 ✅ FAIL:9 ❌ NOT_RUN:257 ⬜ 阻塞:0 📋 Issue Log: 31 | ✅已解决:17 ⏳进行中:1 📝待处理:13 ⚠️ P0 未关闭: 2
+[main/sessions/main/d74b3a34-9151-4f87-8ed6-1bbbe43a5db2.jsonl#L37] Assistant: 📊 CTRM打榜 · 晚间排行榜（6月17日） 今日暂无用户参与考试，排行榜为空。 以上是今日排行榜
+[main/sessions/main/d74b3a34-9151-4f87-8ed6-1bbbe43a5db2.jsonl#L38] Assistant: 🐕 边牧元复盘 | 2026-06-17 (03:39) 评分: 60/100 🔴 C级 📊 今日快照 • 海豚查询: 127次 • Worker存活: 7/5 ✅ • 队列健康: 1运行 + 0待办 • 总commits(近5天): 2501 ⚠️ 扣分项 1. 审计报告: 0份 — ❌ 2. bad 90标记: 115个 — 但经核查均为仓鼠/巨贵正常auto提交，非复发误报 📉 海豚查询从昨日的5776降至127，差距明显 🔍 深层问题 • 审计报告缺失为实质缺失，需关注 • bad 90标记规则需优化（过滤
+[main/sessions/main/d74b3a34-9151-4f87-8ed6-1bbbe43a5db2.jsonl#L39] Assistant: 7b代码审查完成
+[main/sessions/main/d74b3a34-9151-4f87-8ed6-1bbbe43a5db2.jsonl#L40] Assistant: 🔧 海豚 6h 审计 | 2026-06-17 03:42 ✅ 健康 — 所有组件正常运行 • HTTP 桥: OK | ollama: ✅ | PostgreSQL: ✅ | gbrain CLI: ✅ • 查询测试: 正常 (最高分 0.39) • 磁盘: 70G/197G (38%) | 内存: 16G/62G (26%) ⚠️ 容器约 03:36 重启过（运行 6min），可能是系统定时任务，非异常 报告已写: audits/海豚/报告.md
+[main/sessions/main/d74b3a34-9151-4f87-8ed6-1bbbe43a5db2.jsonl#L41] Assistant: 📊 WBS 审计 (2026-06-17 04:01) 📊 审计摘要: 0commit | 0 0agent | 0回写 | 回写率0% 🎯 Test Case: 312条 | PASS:9 ✅ FAIL:9 ❌ NOT_RUN:257 ⬜ 阻塞:0 📋 Issue Log: 31 | ✅已解决:17 ⏳进行中:1 📝待处理:13 ⚠️ P0 未关闭: 2
+[main/sessions/main/d74b3a34-9151-4f87-8ed6-1bbbe43a5db2.jsonl#L42] Assistant: 📊 WBS 审计 (2026-06-17 04:03) [04:03:08] ⚠️ 队列深度告警: 斗牛 大鱼 队列为0但状态非idle 📊 审计摘要: 0commit | 0 0agent | 0回写 | 回写率0% 🎯 Test Case: 312条 | PASS:9 ✅ FAIL:9 ❌ NOT_RUN:257 ⬜ 阻塞:0 📋 Issue Log: 31 | ✅已解决:17 ⏳进行中:1 📝待处理:13 ⚠️ P0 未关闭: 2
+[main/sessions/main/d74b3a34-9151-4f87-8ed6-1bbbe43a5db2.jsonl#L43] Assistant: 📊 WBS 审计 (2026-06-17 05:00) 📊 审计摘要: 0commit | 0 0agent | 0回写 | 回写率0% 🎯 Test Case: 312条 | PASS:9 ✅ FAIL:9 ❌ NOT_RUN:257 ⬜ 阻塞:0 📋 Issue Log: 31 | ✅已解决:17 ⏳进行中:1 📝待处理:13 ⚠️ P0 未关闭: 2
+[main/sessions/main/d74b3a34-9151-4f87-8ed6-1bbbe43a5db2.jsonl#L44] Assistant: 📊 WBS 审计 (2026-06-17 06:02) [06:02:19] ⚠️ 队列深度告警: 斗牛 队列为0但状态非idle 📊 审计摘要: 0commit | 0 0agent | 0回写 | 回写率0% 🎯 Test Case: 312条 | PASS:9 ✅ FAIL:9 ❌ NOT_RUN:257 ⬜ 阻塞:0 📋 Issue Log: 31 | ✅已解决:17 ⏳进行中:1 📝待处理:13 ⚠️ P0 未关闭: 2
+[main/sessions/main/d74b3a34-9151-4f87-8ed6-1bbbe43a5db2.jsonl#L45] Assistant: 📊 WBS 审计 (2026-06-17 06:04) [06:04:38] ⚠️ 队列深度告警: 大鱼 队列为0但状态非idle 📊 审计摘要: 0commit | 0 0agent | 0回写 | 回写率0% 🎯 Test Case: 312条 | PASS:9 ✅ FAIL:9 ❌ NOT_RUN:257 ⬜ 阻塞:0 📋 Issue Log: 31 | ✅已解决:17 ⏳进行中:1 📝待处理:13 ⚠️ P0 未关闭: 2
+[main/sessions/main/d809ebaa-314c-4f8f-ad15-c054996cf271.jsonl#L8] Assistant: Agent watchdog 已执行完毕，无异常输出 — 系统状态正常。
+[main/sessions/main/d816985e-e71b-4096-9048-70e9bfa8bf0a.jsonl#L10] Assistant: 已完成，审计输出已 announce 到 wecom:2207。
+[main/sessions/main/d84fc086-39bb-41e3-9bfe-90fab7010879.jsonl#L8] Assistant: Agent-watchdog 脚本已执行完毕，无异常输出，一切正常。
+[main/sessions/main/d88ea477-de66-464f-8205-ca2e24f1c9b1.jsonl#L10] Assistant: 🐾 **Agent Watchdog — 16:20 静默巡检完成** 所有 5 个 Agent 均在运行： - ✅ 斗牛 - ✅ 巨贵 - ✅ 仓鼠 - ✅ 猎隼 - ✅ 大鱼 无需重启，一切正常。
