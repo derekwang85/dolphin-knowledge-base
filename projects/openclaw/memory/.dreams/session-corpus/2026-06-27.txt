@@ -1,0 +1,6 @@
+[main/sessions/main/31f951b5-16c4-4a8b-908a-1c73a4d55dab.jsonl#L9] Assistant: 🌀 Fulltest 报告 (2026-06-27 01:15 CST) | 指标 | 数值 | |------|------| | 总测试 | 1813 | | 通过 | 1744 | | 失败 | 42 | | 错误 | 27 | ⚠️ **回归警告**: 与上次相比，Failures +42，Error +27 ✅ 闭环完成 --- *注: /tmp/fulltest-summary.txt 内容仍为0（可能未及时更新）*
+[main/sessions/main/98b31c91-30d3-4cb1-bf31-01642fa9a79c.jsonl#L8] Assistant: 同步出错，存在嵌套 git 仓库问题。让我先排查一下：
+[main/sessions/main/98b31c91-30d3-4cb1-bf31-01642fa9a79c.jsonl#L19] Assistant: 两个嵌套 git 仓库导致 `git add -A` 失败。需要将它们加入 `.gitignore`。
+[main/sessions/main/98b31c91-30d3-4cb1-bf31-01642fa9a79c.jsonl#L22] Assistant: 问题明确：`git add -A` 遇到嵌套仓库时中止。需要把它们排除出 git 追踪。
+[main/sessions/main/98b31c91-30d3-4cb1-bf31-01642fa9a79c.jsonl#L33] Assistant: ✅ 同步完成。 **修复内容：** - 向 `.gitignore` 添加了 `skills/guizang-ppt-skill/` 和 `skills/ppt-master-tmp/` 排除规则（这两个目录内含独立 `.git`，`git add -A` 会报错） **本次提交：** ``` bbaa8f2 🔧 config: update configuration @ 2026-06-27 02:00 .gitignore | 4 + guizang-output-deck.html | 2536 +++++++++
+[main/sessions/main/b74b43e2-e38f-499e-84ef-5293c56c5710.jsonl#L8] Assistant: Cron 任务执行成功，审计报告已推送至企微。 **📊 贸易6h审计 - 00:47 CST** | 项目 | 状态 | |------|------| | **Git 最近提交** | 3个（含 fix: OPS全列表页服务端分页） | | **Reasonix 实例** | ⚠️ 0 个（无运行中） | | **Agent 在列** | 8 个 | | **测试** | 0条（未运行） | | **Issue 开放** | 105 条 | | **磁盘** | 46% 已用 | | **内存** | 未检测到 | **⚠
