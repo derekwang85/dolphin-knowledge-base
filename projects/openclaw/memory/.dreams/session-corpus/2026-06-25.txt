@@ -647,3 +647,15 @@
 [main/sessions/main/ec32553a-d91e-4aab-9404-c0ef271ed58b.jsonl.reset.2026-06-26T00-18-31.061Z#L46] Assistant: 数据导入完成，44 个测试全绿，编译通过。6 个还在跑，不打扰 Derek，继续等。
 [main/sessions/main/ec32553a-d91e-4aab-9404-c0ef271ed58b.jsonl.reset.2026-06-26T00-18-31.061Z#L47] Assistant: 任务完成。以下是完成的全部工作总结： --- ## 完成情况 ### 1. 后端 Controller 修复 **`DataImportController.java`** — 从 STUB 修复为全量实现，注入 `DataImportService`： - `POST /api/v1/data-import/preview` — multipart 文件上传调用 Service 预览 - `POST /api/v1/data-import/execute` — 
 [main/sessions/main/ec32553a-d91e-4aab-9404-c0ef271ed58b.jsonl.reset.2026-06-26T00-18-31.061Z#L47] Assistant: `DataImportRecordMapperTest` | 10 条 | INSERT/SELECT/UPDATE/分页查询 | ### 4. Spec 补全 在 spec 末尾追加了完整的 `## 开发实现` 章节，包含： - C1/C2/C3 功能点矩阵（16 项） - 后端全链路文件清单（Domain→Mapper→Service→DTO→Controller） - 前端/ i18n 文件清单 - 测试文件清单及用例数 - 编译验证结果 ### 5. 编译
+[main/sessions/main/ad7d9d24-6e9a-4c34-ae88-f536841239bc.jsonl.reset.2026-06-25T23-23-25.313Z#L155] Assistant: '{"project":"home-cbnb-TradeOMS"}' ``` 报告已写到 `docs/project-reviews/2026-06-25-headroom-codebase-memory-mcp-audit.md`。要现在试下 `detect_changes` 看看 TradeOMS 当前变更的爆炸半径？还是先把 headroom proxy 跑起来看 token 节省效果？
+[main/sessions/main/ad7d9d24-6e9a-4c34-ae88-f536841239bc.jsonl.reset.2026-06-25T23-23-25.313Z#L156] User: 先把 headroom proxy 跑起来看 token 节省效果
+[main/sessions/main/ad7d9d24-6e9a-4c34-ae88-f536841239bc.jsonl.reset.2026-06-25T23-23-25.313Z#L157] Assistant: 好，跑 headroom proxy 然后模拟一个真实请求看压缩效果。
+[main/sessions/main/ad7d9d24-6e9a-4c34-ae88-f536841239bc.jsonl.reset.2026-06-25T23-23-25.313Z#L163] Assistant: 代码感知压缩也装上了。现在启动 proxy 并发送测试流量。
+[main/sessions/main/ad7d9d24-6e9a-4c34-ae88-f536841239bc.jsonl.reset.2026-06-25T23-23-25.313Z#L167] Assistant: 970 tokens、0% 压缩 —— 符合预期，因为单次短对话不是它发力的场景。headroom 吃的是**多轮工具输出**。来一个更真实的 Agent 工作流模拟。
+[main/sessions/main/ad7d9d24-6e9a-4c34-ae88-f536841239bc.jsonl.reset.2026-06-25T23-23-25.313Z#L169] Assistant: Bash 嵌套太乱了。用 Python 来精确控制。
+[main/sessions/main/ad7d9d24-6e9a-4c34-ae88-f536841239bc.jsonl.reset.2026-06-25T23-23-25.313Z#L175] Assistant: 压缩始终为 0% —— 可能是 `--code-aware` 没生效。验证一下。
+[main/sessions/main/ad7d9d24-6e9a-4c34-ae88-f536841239bc.jsonl.reset.2026-06-25T23-23-25.313Z#L181] Assistant: 压缩模块在 `headroom/compression/` 和 `headroom/transforms/` 下。之前的 0% 是因为 401 中断了回调。换个策略 —— 用 API 直接测试压缩。
+[main/sessions/main/ad7d9d24-6e9a-4c34-ae88-f536841239bc.jsonl.reset.2026-06-25T23-23-25.313Z#L187] Assistant: 数据太小了（6,054字符 / ~1,500 tokens），不到 benchmark 最小规模的 1/10。加大到真实规模。
+[main/sessions/main/ad7d9d24-6e9a-4c34-ae88-f536841239bc.jsonl.reset.2026-06-25T23-23-25.313Z#L207] Assistant: `router:noop` — 路由器认为无需压缩。让我看看什么情况会触发实际压缩。
+[main/sessions/main/ad7d9d24-6e9a-4c34-ae88-f536841239bc.jsonl.reset.2026-06-25T23-23-25.313Z#L211] Assistant: Rust core 存在（35MB 编译扩展），SmartCrusher 可用。直接测试 SmartCrusher 压缩效果。
+[main/sessions/main/ad7d9d24-6e9a-4c34-ae88-f536841239bc.jsonl.reset.2026-06-25T23-23-25.313Z#L217] Assistant: **SmartCrusher 单独跑：18,494 → 6,560 chars（64.5% 压缩！）**。问题是全管道没路由过去。查清原因。
