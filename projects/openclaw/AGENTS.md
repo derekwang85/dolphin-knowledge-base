@@ -268,6 +268,39 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.
 
-## Related
+## 🛠️ Coding 十诫（2026-06-29，经 Derek 确认纳入）
 
-- [Default AGENTS.md](/reference/AGENTS.default)
+> 以下十条是所有 Agent（包括我、子 Agent、猛犬小队）写代码前必须加载的编程守则。
+> 子 Agent 派发时自动注入 prompt。
+
+### I. 先读再写（READ BEFORE YOU WRITE）
+改文件前先读——读 import 块、读同类函数、读已有模式。不依赖记忆，不扫读。找不到已有模式就问，不猜。
+
+### II. 先想再码（THINK BEFORE YOU CODE）
+动键盘前先明确假设。每条不确定的设计决策加 `// ASSUMPTION: 我假定 X 因为 Y`。复杂的先写分析再写码。
+
+### III. 简单（SIMPLICITY）
+只解决现在的问题，不为未来版本做过度抽象。不提前写错误处理，只处理真实会发生的错误。硬编码代替配置，直到有真实的配置需求。测试：如果唯一的抽象理由是"以防万一需要"，你就已经过度设计了。
+
+### IV. 手术刀式改动（SURGICAL CHANGES）
+diff 越小越好。不改没被要求改的文件。不格式化——格式化把真正重要的三行埋进三百行噪音里。测试：你能为每一行改动向任务负责吗？如果只是因为"顺手"，revert 它。
+
+### V. 验证（VERIFICATION）
+写代码和测代码之间的距离就是测试的价值。修 bug 时先写失败测试，看到它挂了再修——这是你证明修了根因而非症状的唯一方式。测真实会出问题的行为，不是测构造函数设了值。如果某样东西很难测，那是设计在给你信号，不是放你跳过的许可。
+
+### VI. 目标驱动执行（GOAL-DRIVEN EXECUTION）
+写代码前先明确成功标准。"加校验"要拆成"拒绝非法邮箱返回 400 并测试两种场景"。多步任务先陈述计划，让 Derek 在你花一小时之前就能纠正错误方向。
+
+### VII. 调试（DEBUGGING）
+出问题时调查，不要猜。读完整报错和堆栈。改任何东西前先复现问题。一次只改一个东西。不要用 null 检查糊弄意外 null——找到它为什么是 null，否则 bug 只是挪到了更安静的地方。
+
+### VIII. 依赖（DEPENDENCIES）
+每个依赖都是你控制不了的永久代码。加一个之前，先问标准库能不能搞定（crypto、randomUUID 胜过 uid 包）。加的时候说清楚为什么，让选择可见而不是偷渡进 manifest。
+
+### IX. 沟通（COMMUNICATION）
+说做了什么和为什么，不只给代码块。即使做了被要求的，也要标记担忧。用精确的不确定性表达："我不确定这个库是否支持流式传输"告诉 Derek 要验证什么；"我觉得应该可以"不会。
+
+### X. 常见失败模式（COMMON FAILURE MODES）
+下面几个模式反复出现，值得命名：**Kitchen Sink**（修东西时重构半个项目）、**Wrong Abstraction**（复制粘贴两次后再抽象）、**Optimistic Path**（快乐路径通了，500 忽略了）、**Runaway Refactor**（一个修复级联到十几个文件）。被这些模式抓住时正确的做法是停下来，不是硬推。
+
+---
